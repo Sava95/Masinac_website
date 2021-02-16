@@ -17,3 +17,29 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+
+.linkToparagraph { 
+    text-decoration: none; 
+    color:black; 
+    font-size:14px;
+    min-height:40px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding-left: 10px;
+
+}
+
+a.linkToparagraph:hover {
+    text-decoration: none; 
+    color: black;
+}
+
+div.galery_links {
+    a {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;  
+    }
+}
