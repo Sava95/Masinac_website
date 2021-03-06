@@ -43,3 +43,42 @@ div.galery_links {
         padding-right: 0.5rem;  
     }
 }
+
+.prodLink { 
+    text-decoration: none; 
+    color:black; 
+    font-size:14px;
+    min-height:40px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 0.2rem;
+}
+
+.prodLink:hover {
+    text-decoration: none; 
+    color: black;
+}
+
+.imageCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:200px; 
+  height:200px;
+}
+
+.productHighlight { 
+    position: relative; 
+    cursor: pointer;
+    box-shadow: 0 0 0 1px rgba(208, 216, 223, 1), 0 1px 3px rgba(0,0,0,.15);
+    transition: all .3s;
+  
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 0 1px rgba(208, 216, 223, 1), 0 1px 3px rgba(0,0,0,.15);
+    }
+  }
