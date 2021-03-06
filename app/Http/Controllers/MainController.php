@@ -30,4 +30,10 @@ class MainController extends Controller
     {
         return view('contact');
     }
+
+    public function details($id, $name) 
+    {
+        
+        return view('product_details', compact('id', 'name'));
+    }
 }

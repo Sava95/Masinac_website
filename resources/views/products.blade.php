@@ -16,27 +16,27 @@
 
           <div id="goal-navigation" class="list-group d-flex justify-content-between">
       
-              <a class="list-group-item list-group-item-action" href="#">
+              <a class="list-group-item list-group-item-action prodListItem" href="#">
                 PVC delovi
               </a>
 
-              <a class="list-group-item list-group-item-action" href="#">
+              <a class="list-group-item list-group-item-action prodListItem" href="#">
                 Vezaci
               </a>
 
-              <a class="list-group-item list-group-item-action" href="#">
+              <a class="list-group-item list-group-item-action prodListItem" href="#">
                 Sarke
               </a>
 
-              <a class="list-group-item list-group-item-action" href="#">
+              <a class="list-group-item list-group-item-action prodListItem" href="#">
                 Reze
               </a>
 
-              <a class="list-group-item list-group-item-action" href="#">
+              <a class="list-group-item list-group-item-action prodListItem" href="#">
                 Zicani proizvodi
               </a>
               
-              <a class="list-group-item list-group-item-action" href="#">
+              <a class="list-group-item list-group-item-action prodListItem" href="#">
                 Funkcionalni sklopovi
               </a>
 
@@ -55,19 +55,19 @@
         </div>
 
         <div class="card-body row">
-          <div id='1' class='card productHighlight prod_1' style='width:220px; padding:0px; margin:10px'>
+          <div id='1' class='card productHighlight prodClass_1' style='width:220px; padding:0px; margin:10px'>
             <img src="/images/Plain_rim.jpg" class="imageCenter" >
-            <p class='prodLink' href='#' > Name of Product </p>
+            <p id='prod_name_1' class='prodLink' href='#' > Name of Product </p>
           </div>
 
-          <div id='2' class='card productHighlight prod_2' style='width:220px; padding:0px; margin:10px'>
+          <div id='2' class='card productHighlight prodClass_2' style='width:220px; padding:0px; margin:10px'>
             <img src="/images/Plain_rim.jpg" class="imageCenter" >
-            <p class='prodLink' href='#' > Name of Product </p>
+            <p id='prod_name_2' class='prodLink' href='#' > Name of Product </p>
           </div>
 
-          <div id='3' class='card productHighlight prod_3' style='width:220px; padding:0px; margin:10px'>
+          <div id='3' class='card productHighlight prodClass_3' style='width:220px; padding:0px; margin:10px'>
             <img src="/images/Plain_rim.jpg" class="imageCenter" >
-            <p class='prodLink' href='#' > Name of Product </p>
+            <p id='prod_name_3' class='prodLink' href='#' > Name of Product </p>
           </div>
          
         </div>
