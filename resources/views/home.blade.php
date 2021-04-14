@@ -5,7 +5,7 @@
   <!-- Header -->
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" >
-      <ol class="carousel-indicators" style="height: 14px;margin-bottom:50px">
+      <ol class="carousel-indicators" style="height: 14px;margin-bottom:50px;z-index: 1">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>

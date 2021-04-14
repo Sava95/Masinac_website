@@ -62,6 +62,10 @@ div.galery_links a {
   box-shadow: 0 0 0 1px #d0d8df, 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 
+.prodListItem {
+  cursor: pointer;
+}
+
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors

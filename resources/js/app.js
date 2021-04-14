@@ -1,27 +1,31 @@
 require('./bootstrap');
 
 
-  //  =============================================== NAVBAR ==========================================================
-  // Portfolio caroseul 
-  $('.multi-item-carousel').carousel({
-    interval: false
-  });
+//  =============================================== NAVBAR ==========================================================
+// Portfolio caroseul 
+$('.multi-item-carousel').carousel({
+  interval: false
+});
 
-  // for every slide in carousel, copy the next slide's item in the slide.
-  // Do the same for the next, next item.
-  $('.multi-item-carousel .item').each(function(){
-    var next = $(this).next();
-    if (!next.length) {
-      next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-    
-    if (next.next().length>0) {
-      next.next().children(':first-child').clone().appendTo($(this));
-    } else {
-      $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-    }
-  });
+// function resize() {
+//   alert("Windows is resized...");
+// }
+
+// for every slide in carousel, copy the next slide's item in the slide.
+// Do the same for the next, next item.
+$('.multi-item-carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+  
+  if (next.next().length>0) {
+    next.next().children(':first-child').clone().appendTo($(this));
+  } else {
+    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  }
+});
 
 $(function() {
   const indicator = document.querySelector('.nav-indicator');
@@ -48,7 +52,18 @@ $(function() {
   indicator.style.width = active_element.offsetWidth + 'px';
   indicator.style.left = active_element.offsetLeft + 'px';
   indicator.style.backgroundColor = active_element.getAttribute('active-color');
+})
 
+function indicator_position_change() {
+  var indicator = document.getElementsByClassName('nav-indicator')[0] 
+  var active_element = document.getElementsByClassName('is-active')[0]
+
+  indicator.style.width = active_element.offsetWidth + 'px';
+  indicator.style.left = active_element.offsetLeft + 'px';
+  indicator.style.backgroundColor = active_element.getAttribute('active-color');
+}
+
+window.onresize = indicator_position_change();
 
   //  =============================================== CONTATCT US ==========================================================
   $("#send_email").on('submit', function(e){
@@ -111,6 +126,7 @@ $(function() {
 
   }); //  $("#send_email").on('submit', function(e){ 
 
+  // ################################  Products Page - Product Details Redirect  #################################### 
   var product_elements = document.getElementsByClassName('productHighlight');
 
   function productDetails() {
@@ -127,4 +143,36 @@ $(function() {
     
   };
 
-})
+  // ################################  Products Page - Product Sidebar Show/Hide  #################################### 
+  var sidebar_element = $('.prodListItem');
+
+  function productShowHide() {
+    var prod_id_list = [];
+
+    $('.prodListItem').each(function() {
+      prod_id_list.push( this.id );
+    });
+    
+    var prod_id = this.getAttribute('id');
+    
+    const index = prod_id_list.indexOf(prod_id);
+
+    prod_id_list.splice(index, 1);
+
+    function hide_prod(id) {
+      $('.prodClass_' + id).css('display', 'none');
+      $('.prodClass_' + prod_id).css('display', 'block');
+    }
+
+    prod_id_list.forEach(hide_prod)
+        
+  }
+
+  for (var i = 0; i < sidebar_element.length; i++) {
+    sidebar_element[i].addEventListener('click', productShowHide, false);
+    
+  };
+
+  
+
+

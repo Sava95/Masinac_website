@@ -1,4 +1,19 @@
 @extends('layouts.layout')
+<script> 
+  function showAll () {
+      var prod_id_list = [];
+
+      $('.prodListItem').each(function() {
+        prod_id_list.push( this.id );
+      });
+
+      function show_prod(id) {
+        $('.prodClass_' + id).css('display', 'block');
+      }
+
+      prod_id_list.forEach(show_prod)
+    }
+</script>
 
 @section('content')
   <div class='container' style='padding-top:20px'> 
@@ -16,29 +31,29 @@
 
           <div id="goal-navigation" class="list-group d-flex justify-content-between">
       
-              <a class="list-group-item list-group-item-action prodListItem" href="#">
+              <li id='1' class="list-group-item list-group-item-action prodListItem" style='color:black'>
                 PVC delovi
-              </a>
+              </li>
 
-              <a class="list-group-item list-group-item-action prodListItem" href="#">
+              <li id='2' class="list-group-item list-group-item-action prodListItem" style='color:black'>
                 Vezaci
-              </a>
+              </li>
 
-              <a class="list-group-item list-group-item-action prodListItem" href="#">
+              <li id='3' class="list-group-item list-group-item-action prodListItem" style='color:black'>
                 Sarke
-              </a>
+              </li>
 
-              <a class="list-group-item list-group-item-action prodListItem" href="#">
+              <li id='4' class="list-group-item list-group-item-action prodListItem" style='color:black'>
                 Reze
-              </a>
+              </li>
 
-              <a class="list-group-item list-group-item-action prodListItem" href="#">
+              <li id='5' class="list-group-item list-group-item-action prodListItem" style='color:black'>
                 Zicani proizvodi
-              </a>
+              </li>
               
-              <a class="list-group-item list-group-item-action prodListItem" href="#">
+              <li id='6' class="list-group-item list-group-item-action prodListItem" style='color:black'>
                 Funkcionalni sklopovi
-              </a>
+              </li>
 
           </div>
       </div>
@@ -50,24 +65,55 @@
         <div class="card-header">
           <div class="row">
             <p style='display:flex; align-items: center; margin:0px 20px 0px 10px'> Search product by name: </p>
-            <input type='text' class='form-control' style='width:450px' placeholder='Search'> </input>
+            <input type='text' class='form-control' style='width:450px; margin-right: 240px' placeholder='Search'> </input>
+            <button id='showAll' type="button" class="btn btn-primary" onclick="showAll()"> Show All </button>
           </div>
         </div>
 
         <div class="card-body row">
           <div id='1' class='card productHighlight prodClass_1' style='width:220px; padding:0px; margin:10px'>
             <img src="/images/Plain_rim.jpg" class="imageCenter" >
-            <p id='prod_name_1' class='prodLink' href='#' > Name of Product </p>
+            <p id='prod_name_1' class='prodLink' href='#' > Name of Product 1</p>
           </div>
 
           <div id='2' class='card productHighlight prodClass_2' style='width:220px; padding:0px; margin:10px'>
             <img src="/images/Plain_rim.jpg" class="imageCenter" >
-            <p id='prod_name_2' class='prodLink' href='#' > Name of Product </p>
+            <p id='prod_name_2' class='prodLink' href='#' > Name of Product 2</p>
           </div>
 
           <div id='3' class='card productHighlight prodClass_3' style='width:220px; padding:0px; margin:10px'>
             <img src="/images/Plain_rim.jpg" class="imageCenter" >
-            <p id='prod_name_3' class='prodLink' href='#' > Name of Product </p>
+            <p id='prod_name_3' class='prodLink' href='#' > Name of Product 3</p>
+          </div>
+
+          <div id='4' class='card productHighlight prodClass_4' style='width:220px; padding:0px; margin:10px'>
+            <img src="/images/Plain_rim.jpg" class="imageCenter" >
+            <p id='prod_name_3' class='prodLink' href='#' > Name of Product 4</p>
+          </div>
+
+          <div id='5' class='card productHighlight prodClass_5' style='width:220px; padding:0px; margin:10px'>
+            <img src="/images/Plain_rim.jpg" class="imageCenter" >
+            <p id='prod_name_3' class='prodLink' href='#' > Name of Product 5</p>
+          </div>
+
+          <div id='6' class='card productHighlight prodClass_6' style='width:220px; padding:0px; margin:10px'>
+            <img src="/images/Plain_rim.jpg" class="imageCenter" >
+            <p id='prod_name_3' class='prodLink' href='#' > Name of Product 6</p>
+          </div>
+
+          <div id='2' class='card productHighlight prodClass_2' style='width:220px; padding:0px; margin:10px'>
+            <img src="/images/Plain_rim.jpg" class="imageCenter" >
+            <p id='prod_name_3' class='prodLink' href='#' > Name of Product 2</p>
+          </div>
+
+          <div id='2' class='card productHighlight prodClass_2' style='width:220px; padding:0px; margin:10px'>
+            <img src="/images/Plain_rim.jpg" class="imageCenter" >
+            <p id='prod_name_3' class='prodLink' href='#' > Name of Product 2</p>
+          </div>
+
+          <div id='4' class='card productHighlight prodClass_4' style='width:220px; padding:0px; margin:10px'>
+            <img src="/images/Plain_rim.jpg" class="imageCenter" >
+            <p id='prod_name_3' class='prodLink' href='#' > Name of Product 4</p>
           </div>
          
         </div>
