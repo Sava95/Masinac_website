@@ -7,7 +7,7 @@
 body{
   font-family: 'Titillium Web','Open Sans',sans-serif;
   // font-family: 'DM Sans', sans-serif;
-
+ 
 }
 
 a.nav-item.nav_item_right {
@@ -16,18 +16,13 @@ a.nav-item.nav_item_right {
   margin: 0px;
 }
 
-.nav.nav_right {
-  display: inline-flex;
-  position: relative;
-  overflow: hidden;
-  max-width: 100%;
-  background-color: #fff;
-  padding: 0 20px;
-  border-radius: 40px;
-  box-shadow: 0 10px 40px rgba(159, 162, 177, .8);
+.navbar {
+  background-image: url(/../images/Navbar-Background.png);
+  margin-top: -2px;
+
 }
 
-.nav-item.nav_item_right {
+.nav-item.nav_item_down {
   font-family: 'DM Sans', sans-serif;
   color: #83818c;
   padding: 20px;
@@ -51,12 +46,12 @@ a.nav-item.nav_item_right {
   }
 }
 
-.nav-item.nav_item_right:not(.is-active):hover:before {
+.nav-item.nav_item_down:not(.is-active):hover:before {
   opacity: 1;
   bottom: 0;
 }
 
-.nav-item.nav_item_right:not(.is-active):hover { 
+.nav-item.nav_item_down:not(.is-active):hover { 
   color: rgb(255, 255, 255);  
   transition: .4s; 
 }
@@ -72,7 +67,7 @@ a.nav-item.nav_item_right {
   
 }
 
-.nav-item.nav_item_right.is-active {
+.nav-item.nav_item_down.is-active {
   color: #ff3333;
 }
 

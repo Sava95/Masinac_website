@@ -32,3 +32,6 @@ Route::get('/details/{id}/{prod_name}', [MainController::class, 'details'])->nam
 
 // Contact us routes
 Route::post('/contact-us/send-email', [ContactController::class, 'send_email'])->name('send_email');
+
+// Language routes
+Route::post('/locale/{locale}', [MainController::class, 'locale'])->name('locale');

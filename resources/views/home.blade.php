@@ -1,11 +1,17 @@
 @extends('layouts.layout')
 
 @section('content')
+
+@isset($locale)
+  <p> {{$locale}} </p> 
+@endisset
+
+
 <div class="container-fluid" style='padding-left: 0px;padding-right: 0px;'>
   <!-- Header -->
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style='margin-top:-5px'>
     <div class="carousel-inner" >
-      <ol class="carousel-indicators" style="height: 14px;margin-bottom:50px;z-index: 1">
+      <ol class="carousel-indicators" style="height: 14px; margin-bottom:50px; z-index: 1">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -45,7 +51,7 @@
 
   <!-- Grupe proizvoda -->
   <div style='margin-left: 15%; margin-top:50px; margin-right:15%; margin-bottom: 70px; font-size:16px;'>
-    <h3 class='d-flex justify-content-center'> Masinac - grupe proizvoda </h3>
+    
     <p class='d-flex justify-content-center' > Višegodišnje iskustvo u proizvodnji, originalna tehnička rešenja, prepoznatljiv moderan dizajn i primena savremenih proizvodnih metoda ostvarenih sopstvenim ljudskim i materijalnim resursima, omogućili su kvalitetnu bazu za raznovrstan asortiman proizvoda visokih performansi. </p>
   </div>
 
@@ -53,22 +59,22 @@
     <!-- First Row -->
     <div class="row">
       <div class="col-md-4">
-        <div class="card flex-md-row mb-4 shadow-sm h-md-250 tab-card">
+        <div id='reze_zatvaraci' class="card flex-md-row mb-4 shadow-sm h-md-250 tab-card">
           <img class="card-img-right flex-auto d-none d-lg-block" alt="" src="https://via.placeholder.com/120x170" >
           <div class="card-body d-flex flex-column align-items-start">
                 
-                <strong class="d-inline-block mb-2 text-primary"> PVC delovi </strong>
+                <strong class="d-inline-block mb-2 text-primary"> Reze i zatvarači </strong>
                 
                 <p class="card-text mb-auto" style='font-size: 14px'>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
             </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card flex-md-row mb-4 shadow-sm h-md-250 tab-card">
+        <div id='sarke' class="card flex-md-row mb-4 shadow-sm h-md-250 tab-card">
           <img class="card-img-right flex-auto d-none d-lg-block" alt="" src="https://via.placeholder.com/120x170" >
           <div class="card-body d-flex flex-column align-items-start">
                 
-                <strong class="d-inline-block mb-2 text-primary"> Vezači </strong>
+                <strong class="d-inline-block mb-2 text-primary"> Šarke </strong>
                 
                 <p class="card-text mb-auto" style='font-size: 14px'>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
             </div>
@@ -76,11 +82,11 @@
       </div>
 
       <div class="col-md-4">
-        <div class="card flex-md-row mb-4 shadow-sm h-md-250 tab-card">
+        <div id='ugaoni_vezaci' class="card flex-md-row mb-4 shadow-sm h-md-250 tab-card">
           <img class="card-img-right flex-auto d-none d-lg-block" alt="" src="https://via.placeholder.com/120x170" >
           <div class="card-body d-flex flex-column align-items-start">
                 
-                <strong class="d-inline-block mb-2 text-primary"> Šarke </strong>
+                <strong class="d-inline-block mb-2 text-primary"> Ugaoni vezači </strong>
                 
                 <p class="card-text mb-auto" style='font-size: 14px'>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
             </div>
@@ -92,22 +98,22 @@
     <!-- Second Row -->
     <div class="row">
       <div class="col-md-4">
-        <div class="card flex-md-row mb-4 shadow-sm h-md-250 tab-card">
+        <div id='ravni_vezaci' class="card flex-md-row mb-4 shadow-sm h-md-250 tab-card">
           <img class="card-img-right flex-auto d-none d-lg-block" alt="" src="https://via.placeholder.com/120x170" >
           <div class="card-body d-flex flex-column align-items-start">
                 
-                <strong class="d-inline-block mb-2 text-primary"> Reze </strong>
+                <strong class="d-inline-block mb-2 text-primary"> Ravni vezači </strong>
                 
                 <p class="card-text mb-auto" style='font-size: 14px'>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
             </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card flex-md-row mb-4 shadow-sm h-md-250 tab-card">
+        <div id='prod_zice' class="card flex-md-row mb-4 shadow-sm h-md-250 tab-card">
           <img class="card-img-right flex-auto d-none d-lg-block" alt="" src="https://via.placeholder.com/120x170" >
           <div class="card-body d-flex flex-column align-items-start">
                 
-                <strong class="d-inline-block mb-2 text-primary"> Žičani proizvodi </strong>
+                <strong class="d-inline-block mb-2 text-primary"> Proizvodi od žice </strong>
                 
                 <p class="card-text mb-auto" style='font-size: 14px'>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
             </div>
@@ -115,11 +121,11 @@
       </div>
 
       <div class="col-md-4">
-        <div class="card flex-md-row mb-4 shadow-sm h-md-250 tab-card">
+        <div id='nosaci' class="card flex-md-row mb-4 shadow-sm h-md-250 tab-card">
           <img class="card-img-right flex-auto d-none d-lg-block" alt="" src="https://via.placeholder.com/120x170" >
           <div class="card-body d-flex flex-column align-items-start">
                 
-                <strong class="d-inline-block mb-2 text-primary"> Funkcionalni sklopovi </strong>
+                <strong class="d-inline-block mb-2 text-primary"> Nosači </strong>
                 
                 <p class="card-text mb-auto" style='font-size: 14px'>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
             </div>

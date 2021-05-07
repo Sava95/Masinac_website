@@ -20,9 +20,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/lightbox.css') }}"/>
     
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/lightbox-plus-jquery.js') }}"></script> <!-- Also includes JQuery -->
+
 </head>
 <body>
     @include('layouts._nav')
@@ -32,7 +30,10 @@
     </main>
 
     @include('layouts._footer')
-
+    
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/lightbox-plus-jquery.js') }}"></script> <!-- Also includes JQuery -->
 
 </body>
 </html>

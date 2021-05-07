@@ -1,19 +1,4 @@
 @extends('layouts.layout')
-<script> 
-  function showAll () {
-      var prod_id_list = [];
-
-      $('.prodListItem').each(function() {
-        prod_id_list.push( this.id );
-      });
-
-      function show_prod(id) {
-        $('.prodClass_' + id).css('display', 'block');
-      }
-
-      prod_id_list.forEach(show_prod)
-    }
-</script>
 
 @section('content')
   <div class='container' style='padding-top:20px'> 
@@ -31,29 +16,17 @@
 
           <div id="goal-navigation" class="list-group d-flex justify-content-between">
       
-              <li id='1' class="list-group-item list-group-item-action prodListItem" style='color:black'>
-                PVC delovi
-              </li>
+              <li id='1' class="list-group-item list-group-item-action prodListItem" style='color:black'> REZE I ZATVARAČ </li>
 
-              <li id='2' class="list-group-item list-group-item-action prodListItem" style='color:black'>
-                Vezaci
-              </li>
+              <li id='2' class="list-group-item list-group-item-action prodListItem" style='color:black'>ŠARKE</li>
 
-              <li id='3' class="list-group-item list-group-item-action prodListItem" style='color:black'>
-                Sarke
-              </li>
+              <li id='3' class="list-group-item list-group-item-action prodListItem" style='color:black'>UGAONI VEZAČI </li>
 
-              <li id='4' class="list-group-item list-group-item-action prodListItem" style='color:black'>
-                Reze
-              </li>
+              <li id='4' class="list-group-item list-group-item-action prodListItem" style='color:black'>RAVNI VEZČI </li>
 
-              <li id='5' class="list-group-item list-group-item-action prodListItem" style='color:black'>
-                Zicani proizvodi
-              </li>
+              <li id='5' class="list-group-item list-group-item-action prodListItem" style='color:black'>PROIZVODI OD ŽICE</li>
               
-              <li id='6' class="list-group-item list-group-item-action prodListItem" style='color:black'>
-                Funkcionalni sklopovi
-              </li>
+              <li id='6' class="list-group-item list-group-item-action prodListItem" style='color:black'>NOSAČI </li>
 
           </div>
       </div>
@@ -65,8 +38,9 @@
         <div class="card-header">
           <div class="row">
             <p style='display:flex; align-items: center; margin:0px 20px 0px 10px'> Search product by name: </p>
-            <input type='text' class='form-control' style='width:450px; margin-right: 240px' placeholder='Search'> </input>
-            <button id='showAll' type="button" class="btn btn-primary" onclick="showAll()"> Show All </button>
+            <input id='search_product' type='text' class='form-control' style='width:450px; margin-right: 240px' placeholder='Search'> 
+          </input>
+            <button id='showAll' type="button" class="btn btn-primary"> Show All </button>
           </div>
         </div>
 
