@@ -25,6 +25,11 @@ class MainController extends Controller
         return view('products');
     }
 
+    public function home_to_products($prod_group)
+    {
+        return view('products', compact('prod_group'));
+    }
+
     public function galery()
     {
         return view('galery');

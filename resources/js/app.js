@@ -9,10 +9,6 @@ $('.multi-item-carousel').carousel({
   interval: false
 });
 
-// function resize() {
-//   alert("Windows is resized...");
-// }
-
 // for every slide in carousel, copy the next slide's item in the slide.
 // Do the same for the next, next item.
 $('.multi-item-carousel .item').each(function(){
@@ -36,8 +32,9 @@ $(function() {
 
   if (page) {
     let details_page = window.location.href.substr(22, 7);
+    
 
-    if (details_page == 'details') {
+    if ((details_page == 'details') || (window.location.href.includes('products'))) {
       var active_element = document.getElementById('products');
     } else {
       var active_element = document.getElementById(page);
@@ -71,7 +68,7 @@ window.onresize = indicator_position_change;
 $('.tab-card').on('click', function(e) {
 
   console.log(this.id)
-  window.location.href = 'http://localhost:8000/products'
+  window.location.href = 'http://localhost:8000/products/' + this.id
 })
 
 
@@ -166,26 +163,55 @@ function productShowHide() {
   $('.prodListItem').each(function() {
     prod_id_list.push( this.id );
   });
+
+  console.log(this.id)
   
   var prod_id = this.getAttribute('id');
   
-  const index = prod_id_list.indexOf(prod_id);
+  var index = prod_id_list.indexOf(prod_id);
 
   prod_id_list.splice(index, 1);
 
   function hide_prod(id) {
     $('.prodClass_' + id).css('display', 'none');
-    $('.prodClass_' + prod_id).css('display', 'block');
+    $('.prodListItem').removeClass(" is-active");
   }
 
   prod_id_list.forEach(hide_prod)
-      
+
+  $('.prodClass_' + prod_id).css('display', 'block');
+  this.className += ' is-active'
 }
 
 for (var i = 0; i < sidebar_element.length; i++) {
   sidebar_element[i].addEventListener('click', productShowHide, false);
   
 };
+
+// Product Page - When redirected from Home Page
+var prod_group = $('#prod_group').val();
+console.log(prod_group)
+
+var prod_id_list = [];
+
+$('.prodListItem').each(function() {
+  prod_id_list.push( this.id );
+});
+
+if (typeof(prod_group) !== 'undefined') {
+  function hide_prod(id) {
+    $('.prodClass_' + id).css('display', 'none');
+    $('.prodListItem').removeClass(" is-active");
+  }
+  
+  prod_id_list.forEach(hide_prod)
+
+  $('.prodClass_' + prod_group).css('display', 'block');
+
+  $('#' + prod_group)[0].className += ' is-active'
+
+}
+
 
 
 // Product Page - Search Filter

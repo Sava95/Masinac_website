@@ -24,6 +24,7 @@ Auth::routes();
 // Main page routes 
 Route::get('/', [MainController::class, 'home'])->name('home');
 Route::get('/products', [MainController::class, 'products'])->name('products');
+Route::get('/products/{prod_group}', [MainController::class, 'home_to_products'])->name('home_to_products');
 Route::get('/galery', [MainController::class, 'galery'])->name('galery');
 Route::get('/about_us', [MainController::class, 'about_us'])->name('about_us');
 Route::get('/contact', [MainController::class, 'contact'])->name('contact');
