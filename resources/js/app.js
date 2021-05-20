@@ -249,6 +249,8 @@ $('#showAll').on('click', function() {
 
   prod_id_list.forEach(show_prod)
 
+  $('.prodListItem.is-active').css("background-color", "#f8f9fa");
+
 }) 
    
   

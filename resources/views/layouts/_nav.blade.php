@@ -58,9 +58,7 @@
     <ul class="navbar-nav">
       <div class="dropdown" style='height:30px'>
           <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style='color:white; margin-top:50px;'> 
-              
-            <i class="fas fa-flag" style="padding-right:5px"> </i> 
-            
+                          
             <?php $locale = App::getLocale(); 
               if ($locale == 'gb')
                   $locale = 'en';

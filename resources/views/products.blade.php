@@ -20,19 +20,29 @@
 
           <div id="goal-navigation" class="list-group d-flex justify-content-between">
       
-              <li id='reze_zatvaraci' class="list-group-item list-group-item-action prodListItem" style='color:black'> REZE I ZATVARAČ </li>
+              <li id='reze_zatvaraci' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'> 
+                REZE I ZATVARAČ 
+              </li>
 
-              <li id='sarke' class="list-group-item list-group-item-action prodListItem" style='color:black'>ŠARKE</li>
+              <li id='sarke' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>ŠARKE</li>
 
-              <li id='ugaoni_vezaci' class="list-group-item list-group-item-action prodListItem" style='color:black'>UGAONI VEZAČI </li>
+              <li id='ugaoni_vezaci' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>
+                UGAONI VEZAČI 
+              </li>
 
-              <li id='ravni_vezaci' class="list-group-item list-group-item-action prodListItem" style='color:black'>RAVNI VEZČI </li>
+              <li id='ravni_vezaci' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>
+                RAVNI VEZČI 
+              </li>
 
-              <li id='prod_zice' class="list-group-item list-group-item-action prodListItem" style='color:black'>PROIZVODI OD ŽICE</li>
+              <li id='prod_zice' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>
+                PROIZVODI OD ŽICE
+              </li>
               
-              <li id='nosaci' class="list-group-item list-group-item-action prodListItem" style='color:black'>NOSAČI </li>
+              <li id='nosaci' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>NOSAČI </li>
 
-              <li id='pl_masa' class="list-group-item list-group-item-action prodListItem" style='color:black'>PROD. OD PLASTIČNIH MASA </li>
+              <li id='pl_masa' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>
+                PROD. OD PLASTIČNIH MASA 
+              </li>
 
           </div>
       </div>
