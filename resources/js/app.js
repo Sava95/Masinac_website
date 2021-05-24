@@ -28,25 +28,19 @@ $('.multi-item-carousel .item').each(function(){
 $(function() {
   const indicator = document.querySelector('.nav-indicator');
 
-  let page = window.location.href.substr(22)
+  var url = window.location.href;
 
-  if (page) {
-    let details_page = window.location.href.substr(22, 7);
-    
-
-    if ((details_page == 'details') || (window.location.href.includes('products'))) {
-      var active_element = document.getElementById('products');
-    } else {
-      var active_element = document.getElementById(page);
-    }
-    active_element.classList.add('is-active');
-
+  if (url.includes('details') || url.includes('products')) {
+    var active_element = document.getElementById('products');
+  } else if (url.includes('galery')) {
+    var active_element = document.getElementById('galery');
+  } else if (url.includes('about_us')) {
+    var active_element = document.getElementById('about_us');
+  } else if (url.includes('contact')) {
+    var active_element = document.getElementById('contact');
   } else {
     var active_element = document.getElementById('home');
-    active_element.classList.add('is-active');
   }
-
-  var element_position = active_element.getBoundingClientRect();
 
   indicator.style.width = active_element.offsetWidth + 'px';
   indicator.style.left = active_element.offsetLeft + 'px';
