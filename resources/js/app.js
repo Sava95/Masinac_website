@@ -42,14 +42,29 @@ $(function() {
     var active_element = document.getElementById('home');
   }
 
+  active_element.classList.add('is-active')
+
   indicator.style.width = active_element.offsetWidth + 'px';
   indicator.style.left = active_element.offsetLeft + 'px';
   indicator.style.backgroundColor = active_element.getAttribute('active-color');
+  
 })
 
 function indicator_position_change() {
   var indicator = document.getElementsByClassName('nav-indicator')[0] 
-  var active_element = document.getElementsByClassName('is-active')[0]
+  var url = window.location.href;
+
+  if (url.includes('details') || url.includes('products')) {
+    var active_element = document.getElementById('products');
+  } else if (url.includes('galery')) {
+    var active_element = document.getElementById('galery');
+  } else if (url.includes('about_us')) {
+    var active_element = document.getElementById('about_us');
+  } else if (url.includes('contact')) {
+    var active_element = document.getElementById('contact');
+  } else {
+    var active_element = document.getElementById('home');
+  }
 
   indicator.style.width = active_element.offsetWidth + 'px';
   indicator.style.left = active_element.offsetLeft + 'px';

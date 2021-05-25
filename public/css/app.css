@@ -98,6 +98,126 @@ a.about-us-link:hover {
   transition: all 0.2s ease-in;
 }
 
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: black;
+}
+
+.timeline ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+  z-index: 1;
+  bottom: 44px;
+}
+
+.timeline ul li div.parent {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  height: 200px;
+  padding: 15px;
+  background-image: url("https://via.placeholder.com/400x200");
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.timeline ul li:nth-child(odd) div.child {
+  position: absolute;
+  text-align: justify;
+  bottom: 0;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 400px;
+  padding: 15px;
+  left: 20px;
+  top: 180px;
+  border-style: solid;
+  border-radius: 25px;
+  border-width: 1px;
+  background-color: white;
+}
+
+.timeline ul li:nth-child(even) div.child {
+  position: absolute;
+  text-align: justify;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  right: 20px;
+  top: 180px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-style: solid;
+  border-radius: 25px;
+  border-width: 1px;
+  background-color: white;
+}
+
+.timeline ul li:nth-child(odd) div.date {
+  position: absolute;
+  left: 360px;
+  top: -30px;
+  font-size: 18px;
+}
+
+.timeline ul li:nth-child(even) div.date {
+  position: absolute;
+  right: 360px;
+  top: -30px;
+  font-size: 18px;
+}
+
+.timeline ul li div.parent::before {
+  content: "";
+  position: absolute;
+  bottom: 50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(even) div.parent {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(even) div.parent::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F45B69 transparent transparent;
+}
+
+.timeline ul li:nth-child(odd) div.parent {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(odd) div.parent::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #F45B69;
+}
+
+.navigation {
+  margin-top: -150px;
+  position: absolute;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors

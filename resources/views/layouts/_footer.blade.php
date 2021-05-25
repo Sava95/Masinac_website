@@ -46,15 +46,15 @@
 
     </div>
 
-    <hr>
+    <!-- Grid row 
 
-    <!-- Grid row -->
+    
     <div class="row d-flex align-items-center">
 
-      <!-- Grid column -->
+      
       <div class="col-md-7 col-lg-8">
 
-        <!--Copyright-->
+       
         <p class="text-center text-md-left">© 2020 Copyright:
           <a href="#">
             <strong style='color:white'> Badabum </strong>
@@ -63,10 +63,10 @@
 
       </div>
       
-      <!-- Grid column -->
+     
       <div class="col-md-5 col-lg-4 ml-lg-0">
 
-        <!-- Social buttons -->
+       
         <div class="text-center text-md-right">
           <ul class="list-unstyled list-inline">
             <li class="list-inline-item">
@@ -93,9 +93,11 @@
         </div>
 
       </div>
-      <!-- Grid column -->
+     
 
     </div>
+    -->
+
     <!-- Grid row -->
 
   </div>
