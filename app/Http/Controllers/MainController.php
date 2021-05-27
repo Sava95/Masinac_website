@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App;
+use App\Models\GrupeProizvoda;
 
 use Illuminate\Http\Request;
 
@@ -17,7 +18,13 @@ class MainController extends Controller
     
     public function home()
     {
-        return view('home');
+        $product_groups = GrupeProizvoda::all();
+
+        $data = [
+            'product_groups' => $product_groups,
+        ];
+
+        return view('home')->with($data);
     }
 
     public function products()

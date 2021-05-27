@@ -6,7 +6,6 @@
   <p> {{$locale}} </p> 
 @endisset
 
-
 <div class="container-fluid" style='padding-left: 0px;padding-right: 0px;'>
   <!-- Header -->
   <div id="myCarousel" class="carousel slide" data-ride="carousel" style='margin-top:-5px'>
@@ -56,83 +55,17 @@
   </div>
 
   <div class='container'>
-    <!-- First Row -->
-    <div class="row">
-      <div class="col-md-4">
-        <div id='reze_zatvaraci' class="card flex-md-row mb-4 shadow-sm h-md-250 tab-card">
-          <img class="card-img-right flex-auto d-none d-lg-block" alt="" src="https://via.placeholder.com/120x170" >
-          <div class="card-body d-flex flex-column align-items-start">
-                
-                <strong class="d-inline-block mb-2 text-primary"> Reze i zatvarači </strong>
-                
-                <p class="card-text mb-auto" style='font-size: 14px'>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div id='sarke' class="card flex-md-row mb-4 shadow-sm h-md-250 tab-card">
-          <img class="card-img-right flex-auto d-none d-lg-block" alt="" src="https://via.placeholder.com/120x170" >
-          <div class="card-body d-flex flex-column align-items-start">
-                
-                <strong class="d-inline-block mb-2 text-primary"> Šarke </strong>
-                
-                <p class="card-text mb-auto" style='font-size: 14px'>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-        </div>
-      </div>
+    @foreach($product_groups as $product_group)
+      <div id='{{ $product_group->prod_id }} ' class="card tab-card" style="width: 16rem; margin: 0px 10px" >
+        <img class="card-img-top" src="https://via.placeholder.com/286x180" alt="Card image cap">
 
-      <div class="col-md-4">
-        <div id='ugaoni_vezaci' class="card flex-md-row mb-4 shadow-sm h-md-250 tab-card">
-          <img class="card-img-right flex-auto d-none d-lg-block" alt="" src="https://via.placeholder.com/120x170" >
-          <div class="card-body d-flex flex-column align-items-start">
-                
-                <strong class="d-inline-block mb-2 text-primary"> Ugaoni vezači </strong>
-                
-                <p class="card-text mb-auto" style='font-size: 14px'>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-        </div>
-      </div>
-    </div>
-        
+        <div class="card-body">
+          <h5 class="card-title"> {{ $product_group->naziv  }}  </h5>
+          <p class="card-text"> {{ $product_group->tekst }} </p>
 
-    <!-- Second Row -->
-    <div class="row">
-      <div class="col-md-4">
-        <div id='ravni_vezaci' class="card flex-md-row mb-4 shadow-sm h-md-250 tab-card">
-          <img class="card-img-right flex-auto d-none d-lg-block" alt="" src="https://via.placeholder.com/120x170" >
-          <div class="card-body d-flex flex-column align-items-start">
-                
-                <strong class="d-inline-block mb-2 text-primary"> Ravni vezači </strong>
-                
-                <p class="card-text mb-auto" style='font-size: 14px'>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div id='prod_zice' class="card flex-md-row mb-4 shadow-sm h-md-250 tab-card">
-          <img class="card-img-right flex-auto d-none d-lg-block" alt="" src="https://via.placeholder.com/120x170" >
-          <div class="card-body d-flex flex-column align-items-start">
-                
-                <strong class="d-inline-block mb-2 text-primary"> Proizvodi od žice </strong>
-                
-                <p class="card-text mb-auto" style='font-size: 14px'>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div id='nosaci' class="card flex-md-row mb-4 shadow-sm h-md-250 tab-card">
-          <img class="card-img-right flex-auto d-none d-lg-block" alt="" src="https://via.placeholder.com/120x170" >
-          <div class="card-body d-flex flex-column align-items-start">
-                
-                <strong class="d-inline-block mb-2 text-primary"> Nosači </strong>
-                
-                <p class="card-text mb-auto" style='font-size: 14px'>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-        </div>
-      </div>
-    </div>
-  
+    @endforeach
   </div>
 
   <!-- Galerija -->

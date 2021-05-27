@@ -77,10 +77,16 @@ window.onresize = indicator_position_change;
 $('.tab-card').on('click', function(e) {
 
   console.log(this.id)
-  window.location.href = 'http://localhost:8000/products/' + this.id
+
+  var url = window.location.href;
+
+  if (url.includes('masinacserbia')) {
+    window.location.href = 'http://masinacserbia.rs/products/' + this.id
+  } else {
+    window.location.href = 'http://localhost:8000/products/' + this.id
+  }
+    
 })
-
-
 
 
 //  =============================================== CONTATCT US ==========================================================
@@ -155,7 +161,14 @@ function productDetails() {
   var id = 1;
   var name = 'ASDas';
 
-  window.location.href = 'http://localhost:8000/details/' + id + '/' + name ;
+  var url = window.location.href;
+
+  if (url.includes('masinacserbia')) {
+    window.location.href = 'http://masinacserbia.rs/details/' + id + '/' + name ;
+  } else {
+    window.location.href = 'http://localhost:8000/details/' + id + '/' + name ;
+  }
+
 };
 
 for (var i = 0; i < product_elements.length; i++) {
