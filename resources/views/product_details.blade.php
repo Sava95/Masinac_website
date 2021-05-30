@@ -5,24 +5,48 @@
 
     <div class='card' style='width:80%'>
         <div class="card-body">
-            <h2 style='margin-left:20px'> {{$name}} </h2>
+            <h2 style='margin-left:20px'> {{$product->naziv}} </h2>
 
-            <div class='row'>
-                <div class="col-4">
-                    <img style="width:250px; height:250px" src="/images/Plain_rim.jpg" > 
+            <div class='row' style='margin-top:20px'>
+                <div class="col-5 d-flex">
+                    <img style="width:340px; height:250px;  border-radius:2%" src="{{$image}}" > 
                 </div>
 
-                <div class="col-8">
-                    <p style='margin-bottom:0px'> Šifra proizvoda: 3398063 </p>
-                    <p style='margin-bottom:0px'> Model: 2100 </p>
-                    <p style='margin-bottom:0px'> Robna marka: DABEL </p>
-                    <p style='margin-bottom:0px'> Materijal: Legura cinka </p>
-                    <p style='margin-bottom:0px'> Boja: Hromirana </p>
-                    <p style='margin-bottom:0px'> Jedinica mere: KD </p>
-                    <p style='margin-bottom:0px'> Pakovanje: Trgovačko kačenje </p>
-                    <p style='margin-bottom:0px'> Upotreba: drvo </p>
-                    <p style='margin-bottom:0px'> Marketing: sa prihvatnikom </p>
+                <div class="col-7">
+                    <p>  {{$description}} </p>    
                 </div>
+                <div style='width:90%; margin:5%;'> 
+                    <table class="table table-striped table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Oznaka</th>
+                                <th scope="col">Širina</th>
+                                <th scope="col">Duzina</th>
+                                <th scope="col">Debljina</th>
+                                <th scope="col">Debljina Lima</th>
+                                <th scope="col">Zastita </th>
+                                <th scope="col">Težina </th>
+                                <th scope="col">Br. komada </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach($details as $detail)
+                            <tr>
+                                <th scope="row">{{$detail->id}}</th>
+                                <td> {{$detail->oznaka}}  </td>
+                                <td> {{$detail->sirina}} </td>
+                                <td> {{$detail->duzina}} </td>
+                                <td> {{$detail->debljina}} </td>
+                                <td> {{$detail->deblina_lima}} </td>
+                                <td> {{$detail->zastita}} </td>
+                                <td> {{$detail->tezina}} </td>
+                                <td> {{$detail->br_komada}} </td>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>  
             </div>     
         </div>
     </div>

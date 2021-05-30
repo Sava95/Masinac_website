@@ -27,14 +27,14 @@ div.galery_links a {
   text-decoration: none;
   color: black;
   font-size: 14px;
-  min-height: 40px;
+  min-height: 50px;
   display: flex;
   position: relative;
   width: 100%;
   align-items: center;
   text-align: center;
   justify-content: center;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0;
 }
 
 .prodLink:hover {
@@ -46,8 +46,8 @@ div.galery_links a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 180px;
 }
 
 .productHighlight {
@@ -169,12 +169,6 @@ a.about-us-link:hover {
 .dropdown:hover .dropdown-menu {
   display: block;
   opacity: 1;
-}
-
-.jumbotron_item {
-  height: 550px;
-  margin-bottom: 0px;
-  border-radius: 0px;
 }
 
 .timeline ul li {

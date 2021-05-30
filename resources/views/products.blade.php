@@ -20,29 +20,33 @@
 
           <div id="goal-navigation" class="list-group d-flex justify-content-between">
       
-              <li id='reze_zatvaraci' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'> 
+              <a href='/products/reze_zatvaraci' id='reze_zatvaraci' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'> 
                 REZE I ZATVARAČ 
-              </li>
+              </a>
 
-              <li id='sarke' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>ŠARKE</li>
+              <a href='/products/sarke' id='sarke' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>ŠARKE</a>
 
-              <li id='ugaoni_vezaci' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>
+              <a href='/products/ugaoni_vezaci' id='ugaoni_vezaci' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>
                 UGAONI VEZAČI 
-              </li>
+              </a>
 
-              <li id='ravni_vezaci' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>
+              <a href='/products/ravni_vezaci' id='ravni_vezaci' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>
                 RAVNI VEZČI 
-              </li>
+              </a>
 
-              <li id='prod_zice' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>
+              <a href='/products/prod_zice' id='prod_zice' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>
                 PROIZVODI OD ŽICE
-              </li>
+              </a>
               
-              <li id='nosaci' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>NOSAČI </li>
+              <a href='/products/nosaci' id='nosaci' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>NOSAČI </a>
 
-              <li id='pl_masa' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>
+              <a href='/products/pl_masa' id='pl_masa' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>
                 PROD. OD PLASTIČNIH MASA 
-              </li>
+              </a>
+
+              <a href='/products/usluge' id='usluge' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>
+                USLUGE
+              </a>
 
           </div>
       </div>
@@ -55,57 +59,26 @@
           <div class="row">
             <p style='display:flex; align-items: center; margin:0px 20px 0px 10px'> Search product by name: </p>
             <input id='search_product' type='text' class='form-control' style='width:450px; margin-right: 240px' placeholder='Search'> 
-          </input>
-            <button id='showAll' type="button" class="btn btn-primary"> Show All </button>
+            </input>
           </div>
         </div>
 
         <div class="card-body row">
-          <div id='1' class='card productHighlight prodClass_reze_zatvaraci' style='width:220px; padding:0px; margin:10px'>
-            <img src="/images/Plain_rim.jpg" class="imageCenter" >
-            <p id='prod_name_1' class='prodLink' href='#' > Name of Product 1</p>
-          </div>
 
-          <div id='2' class='card productHighlight prodClass_sarke' style='width:220px; padding:0px; margin:10px'>
-            <img src="/images/Plain_rim.jpg" class="imageCenter" >
-            <p id='prod_name_2' class='prodLink' href='#' > Name of Product 2</p>
-          </div>
+          @foreach($products as $product)
+            <div id='{{$product->id}}' class='card productHighlight ' style='width:220px; padding:0px; margin:10px'>
+              <img src="{{$product->slika}}" alt='{{$product->naziv}}' class="imageCenter" >
+              
+              <p class='prodLink' > {{$product->naziv}} </p>
+            </div>
+          @endforeach
 
-          <div id='3' class='card productHighlight prodClass_ugaoni_vezaci' style='width:220px; padding:0px; margin:10px'>
-            <img src="/images/Plain_rim.jpg" class="imageCenter" >
-            <p id='prod_name_3' class='prodLink' href='#' > Name of Product 3</p>
-          </div>
+     
+        
+        </div>
 
-          <div id='4' class='card productHighlight prodClass_ravni_vezaci' style='width:220px; padding:0px; margin:10px'>
-            <img src="/images/Plain_rim.jpg" class="imageCenter" >
-            <p id='prod_name_3' class='prodLink' href='#' > Name of Product 4</p>
-          </div>
-
-          <div id='5' class='card productHighlight prodClass_prod_zice' style='width:220px; padding:0px; margin:10px'>
-            <img src="/images/Plain_rim.jpg" class="imageCenter" >
-            <p id='prod_name_3' class='prodLink' href='#' > Name of Product 5</p>
-          </div>
-
-          <div id='6' class='card productHighlight prodClass_nosaci' style='width:220px; padding:0px; margin:10px'>
-            <img src="/images/Plain_rim.jpg" class="imageCenter" >
-            <p id='prod_name_3' class='prodLink' href='#' > Name of Product 6</p>
-          </div>
-
-          <div id='2' class='card productHighlight prodClass_sarke' style='width:220px; padding:0px; margin:10px'>
-            <img src="/images/Plain_rim.jpg" class="imageCenter" >
-            <p id='prod_name_3' class='prodLink' href='#' > Name of Product 2</p>
-          </div>
-
-          <div id='2' class='card productHighlight prodClass_sarke' style='width:220px; padding:0px; margin:10px'>
-            <img src="/images/Plain_rim.jpg" class="imageCenter" >
-            <p id='prod_name_3' class='prodLink' href='#' > Name of Product 2</p>
-          </div>
-
-          <div id='4' class='card productHighlight prodClass_ravni_vezaci' style='width:220px; padding:0px; margin:10px'>
-            <img src="/images/Plain_rim.jpg" class="imageCenter" >
-            <p id='prod_name_3' class='prodLink' href='#' > Name of Product 4</p>
-          </div>
-         
+        <div style='margin-left:20px'>
+            {{$products->links('pagination::bootstrap-4')}}
         </div>
         
       </div>

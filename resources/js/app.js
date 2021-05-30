@@ -157,16 +157,14 @@ var product_elements = document.getElementsByClassName('productHighlight');
 
 function productDetails() {
   var product_id = this.getAttribute('id');
-
-  var id = 1;
-  var name = 'ASDas';
+  var name = this.lastElementChild.innerHTML;
 
   var url = window.location.href;
 
   if (url.includes('masinacserbia')) {
-    window.location.href = 'http://masinacserbia.rs/details/' + id + '/' + name ;
+    window.location.href = 'http://masinacserbia.rs/details/' + product_id + '/' + name ;
   } else {
-    window.location.href = 'http://localhost:8000/details/' + id + '/' + name ;
+    window.location.href = 'http://localhost:8000/details/' + product_id + '/' + name ;
   }
 
 };
@@ -176,65 +174,89 @@ for (var i = 0; i < product_elements.length; i++) {
   
 };
 
-// Products Page - Product Sidebar Show/Hide 
-var sidebar_element = $('.prodListItem');
+// Product Page - Sidebar - active element
+var url = window.location.href
 
-function productShowHide() {
-  var prod_id_list = [];
-
-  $('.prodListItem').each(function() {
-    prod_id_list.push( this.id );
-  });
-
-  console.log(this.id)
-  
-  var prod_id = this.getAttribute('id');
-  
-  var index = prod_id_list.indexOf(prod_id);
-
-  prod_id_list.splice(index, 1);
-
-  function hide_prod(id) {
-    $('.prodClass_' + id).css('display', 'none');
-    $('.prodListItem').removeClass(" is-active");
-  }
-
-  prod_id_list.forEach(hide_prod)
-
-  $('.prodClass_' + prod_id).css('display', 'block');
-  this.className += ' is-active'
+if (url.includes('reze_zatvaraci')) {
+  var active_element = $('#reze_zatvaraci'); 
+} else if (url.includes('sarke')) {
+  var active_element = $('#sarke'); 
+} else if (url.includes('ugaoni_vezaci')) {
+  var active_element =$('#ugaoni_vezaci'); 
+} else if (url.includes('ravni_vezaci')) {
+  var active_element = $('#ravni_vezaci'); 
+} else if (url.includes('prod_zice')) {
+  var active_element = $('#prod_zice'); 
+} else if (url.includes('nosaci')) {
+  var active_element = $('#nosaci'); 
+} else if (url.includes('pl_masa')) {
+  var active_element = $('#pl_masa'); 
+} else if (url.includes('usluge')) {
+  var active_element = $('#usluge'); 
 }
 
-for (var i = 0; i < sidebar_element.length; i++) {
-  sidebar_element[i].addEventListener('click', productShowHide, false);
-  
-};
-
-// Product Page - When redirected from Home Page
-var prod_group = $('#prod_group').val();
-console.log(prod_group)
-
-var prod_id_list = [];
-
-$('.prodListItem').each(function() {
-  prod_id_list.push( this.id );
-});
-
-if (typeof(prod_group) !== 'undefined') {
-  function hide_prod(id) {
-    $('.prodClass_' + id).css('display', 'none');
-    $('.prodListItem').removeClass(" is-active");
-  }
-  
-  prod_id_list.forEach(hide_prod)
-
-  $('.prodClass_' + prod_group).css('display', 'block');
-
-  $('#' + prod_group)[0].className += ' is-active'
-
+if (typeof active_element !== 'undefined') {
+  active_element[0].className += ' is-active'
 }
 
 
+// // Products Page - Product Sidebar Show/Hide 
+// var sidebar_element = $('.prodListItem');
+
+// function productShowHide() {
+//   var prod_id_list = [];
+
+//   $('.prodListItem').each(function() {
+//     prod_id_list.push( this.id );
+//   });
+
+//   console.log(this.id)
+  
+//   var prod_id = this.getAttribute('id');
+  
+//   var index = prod_id_list.indexOf(prod_id);
+
+//   prod_id_list.splice(index, 1);
+
+//   function hide_prod(id) {
+//     $('.prodClass_' + id).css('display', 'none');
+//     $('.prodListItem').removeClass(" is-active");
+//   }
+
+//   prod_id_list.forEach(hide_prod)
+
+//   $('.prodClass_' + prod_id).css('display', 'block');
+//   this.className += ' is-active'
+// }
+
+// for (var i = 0; i < sidebar_element.length; i++) {
+//   sidebar_element[i].addEventListener('click', productShowHide, false);
+  
+// };
+
+// // Product Page - When redirected from Home Page
+// var prod_group = $('#prod_group').val();
+// console.log(prod_group)
+
+// var prod_id_list = [];
+
+// $('.prodListItem').each(function() {
+//   prod_id_list.push( this.id );
+// });
+
+// if (typeof(prod_group) !== 'undefined') {
+//   function hide_prod(id) {
+//     $('.prodClass_' + id).css('display', 'none');
+//     $('.prodListItem').removeClass(" is-active");
+//   }
+  
+//   prod_id_list.forEach(hide_prod)
+ 
+//   $('.prodClass_' + prod_group).css('display', 'block');
+
+//   $('#' + prod_group)[0].className += ' is-active'
+
+// }
 
 // Product Page - Search Filter
 $('#search_product').on('keyup', function() {
@@ -257,22 +279,22 @@ $('#search_product').on('keyup', function() {
 
 });
 
-// Product Page - Show All products
-$('#showAll').on('click', function() { 
-  var prod_id_list = [];
+// // Product Page - Show All products
+// $('#showAll').on('click', function() { 
+//   var prod_id_list = [];
 
-  $('.prodListItem').each(function() {
-    prod_id_list.push( this.id );
-  });
+//   $('.prodListItem').each(function() {
+//     prod_id_list.push( this.id );
+//   });
 
-  function show_prod(id) {
-    $('.prodClass_' + id).css('display', 'block');
-  }
+//   function show_prod(id) {
+//     $('.prodClass_' + id).css('display', 'block');
+//   }
 
-  prod_id_list.forEach(show_prod)
+//   prod_id_list.forEach(show_prod)
 
-  $('.prodListItem.is-active').css("background-color", "#f8f9fa");
+//   $('.prodListItem.is-active').css("background-color", "#f8f9fa");
 
-}) 
+// }) 
    
   
