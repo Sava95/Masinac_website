@@ -50,7 +50,7 @@
 
   <!-- Grupe proizvoda -->
   <div class='slogan d-flex justify-content-center align-items-center'>
-    <p style='margin:0px'> SLOGAN FIRME </p>
+    <p style='margin:0px; font-size: 20px'> SVET MOGUĆNOSTI </p>
   </div>
 
   <div class='container'>

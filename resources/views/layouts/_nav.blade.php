@@ -6,7 +6,7 @@
   <div id='navbar' class='container' >
     <!-- Left Side -->
     <ul class="navbar-nav mr-auto">
-      <a href="#"> 
+      <a href="{{ route('home') }}" style='position:fixed; margin-top: -48px'> 
         <img style="width:127px; height:90px" src="/images/Masinac---Logo.png" >
       </a>
 
@@ -40,9 +40,51 @@
     <div class="row">
       <ul class="navbar-nav ml-auto" style='margin-right: 40px; margin-top: 40px'>
         <a id='home' href="{{ route('home') }}" class="nav-item nav_item_down" style='margin-right:5px;  text-transform: uppercase;'active-color="#ff3333">{{ __('ui.home') }}</a>
+        
+        <div class="dropdown" style='display:flex; align-content: center; justify-content: center;'>
+          <a id='products' href="{{ route('products') }}" class="nav-item nav_item_down"
+          style='margin-right:5px; text-transform: uppercase' active-color="#ff3333">{{ __('ui.products') }}</a>
 
-        <a id='products' href="{{ route('products') }}" class="nav-item nav_item_down"
-        style='margin-right:5px; text-transform: uppercase' active-color="#ff3333">{{ __('ui.products') }}</a>
+
+          <div class="dropdown-menu dropdown-menu-right" style='position:absolute; margin: 0px -45px 0px 0px;'>
+              <li class='dropdown-item' style='margin:0'>
+                <a href='#' class='linkToparagraph'> Reze i zatvaraci </a>
+              </li>
+
+              <li class='dropdown-item' style='margin:0'>
+                <a href='#' class='linkToparagraph'> Šarke </a>
+              </li>
+
+              <li class='dropdown-item' style='margin:0'>
+                <a href='#' class='linkToparagraph'> Ugaoni vezači </a>
+              </li>
+
+              <li class='dropdown-item' style='margin:0'>
+                <a href='#' class='linkToparagraph'> Ravni vezači </a>
+              </li>
+
+              <li class='dropdown-item' style='margin:0'>
+                <a href='#' class='linkToparagraph'> Proizvodi od žice </a>
+              </li>
+
+              <li class='dropdown-item' style='margin:0'>
+                <a href='#' class='linkToparagraph'> Nosači </a>
+              </li>
+
+              <li class='dropdown-item' style='margin:0'>
+                <a href='#' class='linkToparagraph'> Prod. od plastičnih masa </a>
+              </li>
+
+              <li class='dropdown-item' style='margin:0'>
+                <a href='#' class='linkToparagraph'> Usluge </a>
+              </li>
+
+
+   
+          </div>
+
+        </div>
+
 
         <a id='galery' href="{{ route('galery') }}" class="nav-item nav_item_down" style='margin-right:5px; text-transform: uppercase;'active-color="#ff3333">{{ __('ui.galery') }}</a>
 
@@ -55,33 +97,32 @@
       </ul>
 
 
-    <ul class="navbar-nav">
-      <div class="dropdown" style='height:30px'>
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style='color:white; margin-top:50px;'> 
-                          
-            <?php $locale = App::getLocale(); 
-              if ($locale == 'gb')
-                  $locale = 'en';
-            ?> 
+      <ul class="navbar-nav">
+        <div class="dropdown" style='height:30px'>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style='color:white; margin-top:50px;'> 
+                            
+              <?php $locale = App::getLocale(); 
+                if ($locale == 'gb')
+                    $locale = 'en';
+              ?> 
 
-            <text style='text-transform: uppercase;'> {{$locale}} </text>
-              
-          </a>
-          
+              <text style='text-transform: uppercase;'> {{$locale}} </text>
+                
+            </a>
+            
 
-          <div class="dropdown-menu dropdown-menu-right" style="min-width:110px; margin: 64px 0px 0px 0px" aria-labelledby="dropdownMenu2">
-              <li class='dropdown-item'>
-                @include('layouts._locale', ['lang' => 'gb', 'nation' => 'English'])
-              </li>
+            <div class="dropdown-menu dropdown-menu-right" style="min-width:110px; margin: 64px 0px 0px 0px" aria-labelledby="dropdownMenu2">
+                <li class='dropdown-item'>
+                  @include('layouts._locale', ['lang' => 'gb', 'nation' => 'English'])
+                </li>
 
-              <li class='dropdown-item'>
-                  @include('layouts._locale', ['lang' => 'rs', 'nation' => 'Serbian'])
-              </li>
+                <li class='dropdown-item'>
+                    @include('layouts._locale', ['lang' => 'rs', 'nation' => 'Serbian'])
+                </li>
+            </div>
 
-          </div>
-
-      </div>
-    </ul>
-
+        </div>
+      </ul>
+    </div>
   </div>
 </nav>
