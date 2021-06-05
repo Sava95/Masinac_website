@@ -40,47 +40,46 @@
     <div class="row">
       <ul class="navbar-nav ml-auto" style='margin-right: 40px; margin-top: 40px'>
         <a id='home' href="{{ route('home') }}" class="nav-item nav_item_down" style='margin-right:5px;  text-transform: uppercase;'active-color="#ff3333">{{ __('ui.home') }}</a>
-        
-        <div class="dropdown" style='display:flex; align-content: center; justify-content: center;'>
-          <a id='products' href="{{ route('products') }}" class="nav-item nav_item_down"
+        <a id='products' href="{{ route('products') }}" class="nav-item nav_item_down"
           style='margin-right:5px; text-transform: uppercase' active-color="#ff3333">{{ __('ui.products') }}</a>
+          
+        <div class="dropdown" style='display:flex; align-content: center; justify-content: center;'>
+          
 
 
-          <div class="dropdown-menu dropdown-menu-right" style='position:absolute; margin: 0px -45px 0px 0px;'>
-              <li class='dropdown-item' style='margin:0'>
-                <a href='#' class='linkToparagraph'> Reze i zatvaraci </a>
+          <div class="dropdown-menu dropdown-menu-right" style='margin: 0px -90px 0px 0px;'>
+              <li class='dropdown-item'>
+                <a href='/products/reze_zatvaraci' class='linkToparagraph'> Reze i zatvaraci </a>
               </li>
 
-              <li class='dropdown-item' style='margin:0'>
-                <a href='#' class='linkToparagraph'> Šarke </a>
+              <li class='dropdown-item'>
+                <a href='/products/sarke' class='linkToparagraph'> Šarke </a>
               </li>
 
-              <li class='dropdown-item' style='margin:0'>
-                <a href='#' class='linkToparagraph'> Ugaoni vezači </a>
+              <li class='dropdown-item'>
+                <a href='/products/ugaoni_vezaci' class='linkToparagraph'> Ugaoni vezači </a>
               </li>
 
-              <li class='dropdown-item' style='margin:0'>
-                <a href='#' class='linkToparagraph'> Ravni vezači </a>
+              <li class='dropdown-item'>
+                <a href='/products/ravni_vezaci' class='linkToparagraph'> Ravni vezači </a>
               </li>
 
-              <li class='dropdown-item' style='margin:0'>
-                <a href='#' class='linkToparagraph'> Proizvodi od žice </a>
+              <li class='dropdown-item'>
+                <a href='/products/prod_zice' class='linkToparagraph'> Proizvodi od žice </a>
               </li>
 
-              <li class='dropdown-item' style='margin:0'>
-                <a href='#' class='linkToparagraph'> Nosači </a>
+              <li class='dropdown-item'>
+                <a href='/products/nosaci' class='linkToparagraph'> Nosači </a>
               </li>
 
-              <li class='dropdown-item' style='margin:0'>
-                <a href='#' class='linkToparagraph'> Prod. od plastičnih masa </a>
+              <li class='dropdown-item'>
+                <a href='/products/pl_masa' class='linkToparagraph'> Prod. od plastičnih masa </a>
               </li>
 
-              <li class='dropdown-item' style='margin:0'>
-                <a href='#' class='linkToparagraph'> Usluge </a>
+              <li class='dropdown-item'>
+                <a href='/products/usluge' class='linkToparagraph'> Usluge </a>
               </li>
 
-
-   
           </div>
 
         </div>
