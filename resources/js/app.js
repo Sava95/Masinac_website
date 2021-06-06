@@ -73,6 +73,55 @@ function indicator_position_change() {
 
 window.onresize = indicator_position_change;
 
+
+// Products Dropdown menu 
+$("#products_dropdown").on("mouseenter", function () {
+  $("#products_dropdown").css('opacity', 1)
+  $("#products_dropdown").css('display', 'block')
+  $("#products_dropdown").css('visibility', 'visible')
+
+});
+
+$("#products_dropdown").on("mouseleave", function () {
+  $("#products_dropdown").css('opacity', '')
+  $("#products_dropdown").css('display', '')
+  $("#products_dropdown").css('visibility', '')
+
+});
+
+// Languages Dropdown menu 
+$("#lang_dropdown").on("mouseenter", function () {
+  $("#lang_dropdown").css('opacity', 1)
+  $("#lang_dropdown").css('display', 'block')
+  $("#lang_dropdown").css('visibility', 'visible')
+
+});
+
+$("#lang_dropdown").on("mouseleave", function () {
+  $("#lang_dropdown").css('opacity', '')
+  $("#lang_dropdown").css('display', '')
+  $("#lang_dropdown").css('visibility', '')
+
+});
+
+$(function(){
+  window.addEventListener('scroll', () => {
+    console.log(window.scrollY)
+    if (window.scrollY > 420) {
+      $("#arrow_up_circle").css('opacity', 1)
+      $("#arrow_up_circle").css('display', 'block')
+      $("#arrow_up_circle").css('visibility', 'visible')
+    } else {
+      $("#arrow_up_circle").css('opacity', '')
+      $("#arrow_up_circle").css('display', '')
+      $("#arrow_up_circle").css('visibility', '')
+    }
+  });
+});
+
+$('#arrow_div').on('click', function(){
+  window.scrollTo(0, 0);
+})
 //  =============================================== HOME PAGE ==========================================================
 $('.tab-card').on('click', function(e) {
 

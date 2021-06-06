@@ -82,3 +82,58 @@ a.nav-item.nav_item_right {
   font-size: 0.75rem;
   font-family: 'DM Sans', sans-serif;
 }
+
+.dropdown .dropdown-menu{
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+
+  -moz-transition:    all .3s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition:      all .3s ease;
+  -ms-transition:     all .3s ease;
+  transition:         all .3s ease;
+}
+
+a.nav-link:hover ~ .dropdown-menu{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+a#products:hover  {
+  ~.dropdown .dropdown-menu{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.dropdown-item:active {
+  color: #212529;
+  background-color: transparent;
+}
+
+.dropdown .dropdown-menu{
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+
+  -moz-transition:    all .3s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition:      all .3s ease;
+  -ms-transition:     all .3s ease;
+  transition:         all .3s ease;
+}
+
+#arrow_up_circle {
+ display: block; 
+ opacity: 0; 
+ visibility: visible;
+
+ -moz-transition:    all .3s ease;
+ -webkit-transition: all .3s ease;
+ -o-transition:      all .3s ease;
+ -ms-transition:     all .3s ease;
+ transition:         all .3s ease;
+}

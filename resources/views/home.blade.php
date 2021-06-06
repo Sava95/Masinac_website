@@ -6,6 +6,10 @@
   <p> {{$locale}} </p> 
 @endisset
 
+<div id='arrow_div'> 
+  <img id='arrow_up_circle' src='/images/arrow-up-circle.svg' alt='Arrow up' style='position:fixed; margin: 450px 1350px;'>
+</div>
+
 <div class="container-fluid" style='padding-left: 0px;padding-right: 0px;'>
   <!-- Header -->
   <div id="myCarousel" class="carousel slide" data-ride="carousel" style='margin-top:-5px'>
@@ -54,6 +58,10 @@
   </div>
 
   <div class='container'>
+    <div style='margin-left: 15%; margin-top:50px; margin-right:15%; margin-bottom: 40px; font-size:16px;'>
+        <h3 class='d-flex justify-content-center'> Naši proizvodi </h3>
+    </div>
+
     <div class='row'>
       @foreach($product_groups as $product_group)
         <div id='{{ $product_group->grupe_prod_id }} ' class="card tab-card" style="width: 16rem; margin: 10px " >
@@ -71,8 +79,8 @@
 
   <!-- Galerija -->
   <div style='margin-left: 15%; margin-top:50px; margin-right:15%; margin-bottom: 40px; font-size:16px;'>
-      <h3 class='d-flex justify-content-center'> Naši proizvodi </h3>
-  </div>
+        <h3 class='d-flex justify-content-center'> Istaknuti proizvodi </h3>
+    </div>
 
   <div class='container d-flex justify-content-between'>
     <div>

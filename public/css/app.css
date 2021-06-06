@@ -159,17 +159,6 @@ a.about-us-link:hover {
   transform: scale(1.3);
 }
 
-.dropdown .dropdown-menu {
-  display: block;
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-  opacity: 1;
-}
-
 .timeline ul li {
   list-style-type: none;
   position: relative;
@@ -13358,6 +13347,44 @@ a.nav-item.nav_item_right {
   border-color: white;
   font-size: 0.75rem;
   font-family: "DM Sans", sans-serif;
+}
+
+.dropdown .dropdown-menu {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+a.nav-link:hover ~ .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+a#products:hover ~ .dropdown .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-item:active {
+  color: #212529;
+  background-color: transparent;
+}
+
+.dropdown .dropdown-menu {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+#arrow_up_circle {
+  display: block;
+  opacity: 0;
+  visibility: visible;
+  transition: all 0.3s ease;
 }
 
 /* Circular loader */

@@ -44,10 +44,7 @@
           style='margin-right:5px; text-transform: uppercase' active-color="#ff3333">{{ __('ui.products') }}</a>
           
         <div class="dropdown" style='display:flex; align-content: center; justify-content: center;'>
-          
-
-
-          <div class="dropdown-menu dropdown-menu-right" style='margin: 0px -90px 0px 0px;'>
+          <div id='products_dropdown' class="dropdown-menu dropdown-menu-right" style='margin: 0px -90px 0px 0px;'>
               <li class='dropdown-item'>
                 <a href='/products/reze_zatvaraci' class='linkToparagraph'> Reze i zatvaraci </a>
               </li>
@@ -95,10 +92,9 @@
         <span class="nav-indicator"></span>
       </ul>
 
-
       <ul class="navbar-nav">
         <div class="dropdown" style='height:30px'>
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style='color:white; margin-top:50px;'> 
+            <a  class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style='color:white; margin-top:50px;'> 
                             
               <?php $locale = App::getLocale(); 
                 if ($locale == 'gb')
@@ -109,8 +105,7 @@
                 
             </a>
             
-
-            <div class="dropdown-menu dropdown-menu-right" style="min-width:110px; margin: 64px 0px 0px 0px" aria-labelledby="dropdownMenu2">
+            <div id='lang_dropdown' class="dropdown-menu dropdown-menu-right" style="min-width:110px; margin: 71px -60px 0 0">
                 <li class='dropdown-item'>
                   @include('layouts._locale', ['lang' => 'gb', 'nation' => 'English'])
                 </li>
