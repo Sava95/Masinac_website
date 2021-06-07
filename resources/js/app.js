@@ -104,10 +104,10 @@ $("#lang_dropdown").on("mouseleave", function () {
 
 });
 
+// Home page arrow show/hide 
 $(function(){
   window.addEventListener('scroll', () => {
-    console.log(window.scrollY)
-    if (window.scrollY > 420) {
+    if (window.scrollY > 420 && window.scrollY < 1600 ) {
       $("#arrow_up_circle").css('opacity', 1)
       $("#arrow_up_circle").css('display', 'block')
       $("#arrow_up_circle").css('visibility', 'visible')
@@ -119,9 +119,10 @@ $(function(){
   });
 });
 
-$('#arrow_div').on('click', function(){
+$('#arrow_div').on('click', function(e){
   window.scrollTo(0, 0);
 })
+
 //  =============================================== HOME PAGE ==========================================================
 $('.tab-card').on('click', function(e) {
 

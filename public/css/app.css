@@ -159,6 +159,26 @@ a.about-us-link:hover {
   transform: scale(1.3);
 }
 
+.nasi_proizvodi {
+  text-decoration: underline;
+  -webkit-text-decoration-color: red;
+          text-decoration-color: red;
+  font-size: 30px;
+  font-weight: 600;
+  text-underline-offset: 10px;
+}
+
+#arrow_up_circle {
+  display: block;
+  opacity: 0;
+  visibility: visible;
+  transition: all 0.5s ease;
+}
+
+#arrow_up_circle:hover {
+  transform: translateY(-10px);
+}
+
 .timeline ul li {
   list-style-type: none;
   position: relative;
@@ -13377,13 +13397,6 @@ a#products:hover ~ .dropdown .dropdown-menu {
   display: block;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease;
-}
-
-#arrow_up_circle {
-  display: block;
-  opacity: 0;
-  visibility: visible;
   transition: all 0.3s ease;
 }
 

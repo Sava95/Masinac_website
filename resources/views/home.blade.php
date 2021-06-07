@@ -7,7 +7,7 @@
 @endisset
 
 <div id='arrow_div'> 
-  <img id='arrow_up_circle' src='/images/arrow-up-circle.svg' alt='Arrow up' style='position:fixed; margin: 450px 1350px;'>
+  <img id='arrow_up_circle' width='50px' height='50px'src='/images/arrow-up-circle.png' alt='Arrow up' style='position:fixed; margin: 450px 1380px;'>
 </div>
 
 <div class="container-fluid" style='padding-left: 0px;padding-right: 0px;'>
@@ -51,68 +51,70 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+</div>
 
-  <!-- Grupe proizvoda -->
-  <div class='slogan d-flex justify-content-center align-items-center'>
-    <p style='margin:0px; font-size: 20px'> SVET MOGUĆNOSTI </p>
+<!-- Grupe proizvoda -->
+<div class='slogan d-flex justify-content-center align-items-center' style='visibility: hidden;'>
+  <p style='margin:0px; font-size: 40px; color:white; font-weight: 700'> SVET MOGUĆNOSTI </p>
+</div>
+
+<div class='container'>
+  <div style='margin: 60px 0px'>
+      <h3 class='nasi_proizvodi'> Naši proizvodi </h3>
+      <p style='margin-top: 15px; font-size: 20px'> Ne ograničavaj vaš um. Budite kreativni uz proizvode mašinac. </p>
   </div>
 
-  <div class='container'>
-    <div style='margin-left: 15%; margin-top:50px; margin-right:15%; margin-bottom: 40px; font-size:16px;'>
-        <h3 class='d-flex justify-content-center'> Naši proizvodi </h3>
-    </div>
+  <div class='row'>
+    @foreach($product_groups as $product_group)
+      <div id='{{ $product_group->grupe_prod_id }} ' class="card tab-card" style="width: 16rem; margin: 10px " >
+        <img class="card-img-top" src="{{ $product_group->slika }}" alt="Card image cap">
 
-    <div class='row'>
-      @foreach($product_groups as $product_group)
-        <div id='{{ $product_group->grupe_prod_id }} ' class="card tab-card" style="width: 16rem; margin: 10px " >
-          <img class="card-img-top" src="{{ $product_group->slika }}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style='font-size:16px'> {{ $product_group->naziv  }}  </h5>
+          <p class="card-text"> {{ str_limit($product_group->opis, 80) }} </p>
 
-          <div class="card-body">
-            <h5 class="card-title" style='font-size:16px'> {{ $product_group->naziv  }}  </h5>
-            <p class="card-text"> {{ str_limit($product_group->opis, 80) }} </p>
-
-          </div>
         </div>
-      @endforeach
-    </div>
+      </div>
+    @endforeach
+  </div>
+</div>
+
+<!-- Galerija -->
+<div style='margin-left: 15%; margin-top:50px; margin-right:15%; margin-bottom: 40px; font-size:16px;'>
+      <h3 class='d-flex justify-content-center'> Istaknuti proizvodi </h3>
   </div>
 
-  <!-- Galerija -->
-  <div style='margin-left: 15%; margin-top:50px; margin-right:15%; margin-bottom: 40px; font-size:16px;'>
-        <h3 class='d-flex justify-content-center'> Istaknuti proizvodi </h3>
-    </div>
-
-  <div class='container d-flex justify-content-between'>
-    <div>
-      <a href="images\Plain_rim.jpg" data-lightbox="roadtrip" data-title="My caption"> 
-        <img style="width:260px; height:260px" src="/images/Plain_rim.jpg" > 
-      </a>
-      <a class='linkToparagraph' href='#'> Product name </a>
-    </div>
-
-    <div>
-      <a href="images\Plain_rim.jpg" data-lightbox="roadtrip" data-title="My caption"> 
-        <img style="width:260px; height:260px" src="/images/Plain_rim.jpg" > 
-      </a>
-      <a class='linkToparagraph' href='#'> Product name </a>
-    </div>
-
-    <div>
-      <a href="images\Plain_rim.jpg" data-lightbox="roadtrip" data-title="My caption"> 
-        <img style="width:260px; height:260px" src="/images/Plain_rim.jpg" > 
-      </a>
-      <a class='linkToparagraph' href='#'> Product name </a>
-    </div>
-
-    <div>
-      <a href="images\Plain_rim.jpg" data-lightbox="roadtrip" data-title="My caption"> 
-        <img style="width:260px; height:260px" src="/images/Plain_rim.jpg" > 
-      </a>
-      <a class='linkToparagraph' href='#'> Product name </a>
-    </div>
-
-  
+<div class='container d-flex justify-content-between'>
+  <div>
+    <a href="images\Plain_rim.jpg" data-lightbox="roadtrip" data-title="My caption"> 
+      <img style="width:260px; height:260px" src="/images/Plain_rim.jpg" > 
+    </a>
+    <a class='linkToparagraph' href='#'> Product name </a>
   </div>
+
+  <div>
+    <a href="images\Plain_rim.jpg" data-lightbox="roadtrip" data-title="My caption"> 
+      <img style="width:260px; height:260px" src="/images/Plain_rim.jpg" > 
+    </a>
+    <a class='linkToparagraph' href='#'> Product name </a>
+  </div>
+
+  <div>
+    <a href="images\Plain_rim.jpg" data-lightbox="roadtrip" data-title="My caption"> 
+      <img style="width:260px; height:260px" src="/images/Plain_rim.jpg" > 
+    </a>
+    <a class='linkToparagraph' href='#'> Product name </a>
+  </div>
+
+  <div>
+    <a href="images\Plain_rim.jpg" data-lightbox="roadtrip" data-title="My caption"> 
+      <img style="width:260px; height:260px" src="/images/Plain_rim.jpg" > 
+    </a>
+    <a class='linkToparagraph' href='#'> Product name </a>
+  </div>
+
+
+</div>
 
 </div>
 @endsection
