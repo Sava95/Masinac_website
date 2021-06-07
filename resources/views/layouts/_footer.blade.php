@@ -1,4 +1,4 @@
-<footer class="py-2 mt-4 bg-dark">
+<footer class="py-2 bg-dark">
   <div class="container text-md-left">
     <div class="row d-flex justify-content-between text-md-left mt-3">
 

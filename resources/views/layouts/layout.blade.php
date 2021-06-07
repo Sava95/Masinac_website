@@ -26,7 +26,7 @@
 <body>
     @include('layouts._nav')
 
-    <main style='min-height:500px; padding-top:110px'>
+    <main>
         @yield('content')
     </main>
 

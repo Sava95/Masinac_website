@@ -63,10 +63,10 @@
           </div>
         </div>
 
-        <div class="card-body row">
+        <div class="card-body row" style=' min-height:500px'>
 
           @foreach($products as $product)
-            <div id='{{$product->id}}' class='card productHighlight ' style='width:220px; padding:0px; margin:10px'>
+            <div id='{{$product->id}}' class='card productHighlight ' style='width:220px; padding:0px; margin:10px; height: 232px;'>
               <img src="{{$product->slika}}" alt='{{$product->naziv}}' class="imageCenter" >
               
               <p class='prodLink' > {{$product->naziv}} </p>

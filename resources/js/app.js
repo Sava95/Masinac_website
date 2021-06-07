@@ -103,10 +103,16 @@ $("#lang_dropdown").on("mouseleave", function () {
   $("#lang_dropdown").css('visibility', '')
 });
 
-$('.hover_highlight').on('hover', function() {
-  $('#products').css('color', 'white')
-  $('#products').css('transition', '0.4s')
-})
+var url = window.location.href;
+
+if (! url.includes('products')){
+  $('.hover_highlight').hover(function() {
+    $('#products').css('color', 'white')
+    $('#products').css('transition', '0.4s')
+  }, function() {
+    $('#products').css('color', '')
+  });
+}
 
 // Home page arrow show/hide 
 $(function(){
@@ -352,3 +358,58 @@ $('#search_product').on('keyup', function() {
 // }) 
    
   
+//  =============================================== ABOUT US ==========================================================
+$(function(){
+  window.addEventListener('scroll', () => {
+    console.log(window.scrollY)
+    if (window.scrollY < 200) {
+      $('.active-element').removeClass('active-element')
+
+      $('#1970').addClass('active-element');
+      $('#1970_link').addClass('active-element');
+
+    } else if (window.scrollY < 450) { 
+      $('.active-element').removeClass('active-element')
+
+      $('#1992').addClass('active-element');
+      $('#1992_link').addClass('active-element');
+
+    } else if (window.scrollY < 700) { 
+      $('.active-element').removeClass('active-element')
+
+      $('#1995').addClass('active-element');
+      $('#1995_link').addClass('active-element');
+
+    } else if (window.scrollY < 950) { 
+      $('.active-element').removeClass('active-element')
+
+      $('#2000').addClass('active-element');
+      $('#2000_link').addClass('active-element');
+
+    } else if (window.scrollY < 1200) { 
+      $('.active-element').removeClass('active-element')
+
+      $('#2002').addClass('active-element');
+      $('#2002_link').addClass('active-element');
+
+    } else if (window.scrollY < 1450) { 
+      $('.active-element').removeClass('active-element')
+
+      $('#2006').addClass('active-element');
+      $('#2006_link').addClass('active-element');
+
+    } else if (window.scrollY < 1700) { 
+      $('.active-element').removeClass('active-element')
+
+      $('#2009').addClass('active-element');
+      $('#2009_link').addClass('active-element');
+
+    } else if (window.scrollY < 1950) { 
+      $('.active-element').removeClass('active-element')
+
+      $('#2020').addClass('active-element');
+      $('#2020_link').addClass('active-element');
+
+    }
+  });
+});

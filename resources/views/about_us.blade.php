@@ -7,22 +7,22 @@
 
     <div class="row">
       <div  style='position:fixed; height:30px; padding-left: 90px'>
-        <a href="#1970" class='about-us-link'> 1970 </a>
-        <a href="#1992" class='about-us-link'> 1992 </a>
-        <a href="#1995" class='about-us-link'> 1995 </a>
-        <a href="#2000" class='about-us-link'> 2000 </a>
-        <a href="#2002" class='about-us-link'> 2002 </a>
-        <a href="#2006" class='about-us-link'> 2006 </a>
-        <a href="#2009" class='about-us-link'> 2009 </a>
-        <a href="#2020" class='about-us-link'> 2020 </a>
+        <a id='1970_link' href="#1970_nav" class='about-us-link active-element'> 1970 </a>
+        <a id='1992_link' href="#1992_nav" class='about-us-link'> 1992 </a>
+        <a id='1995_link' href="#1995_nav" class='about-us-link'> 1995 </a>
+        <a id='2000_link' href="#2000_nav" class='about-us-link'> 2000 </a>
+        <a id='2002_link' href="#2002_nav" class='about-us-link'> 2002 </a>
+        <a id='2006_link' href="#2006_nav" class='about-us-link'> 2006 </a>
+        <a id='2009_link' href="#2009_nav" class='about-us-link'> 2009 </a>
+        <a id='2020_link' href="#2020_nav" class='about-us-link'> 2020 </a>
       </div>
 
       <div  style='width:100%'>
   
         <section class="timeline">
           <ul>
-            <li>
-              <p id='1970' class='navigation'> </p>
+            <li id='1970' class='timeline_section active-element'>
+              <p id='1970_nav' class='navigation'> </p>
 
               <div class='parent'>
                 <div class='date'> 
@@ -36,8 +36,8 @@
               </div>
             </li>
 
-            <li>
-              <p id='1992' class='navigation'> </p>
+            <li id='1992' class='timeline_section'>
+              <p id='1992_nav' class='navigation'> </p>
 
               <div class='parent'>
                 <div class='date'> 
@@ -51,8 +51,8 @@
               </div>
             </li>
 
-            <li>
-              <p id='1995' class='navigation'> </p>
+            <li id='1995' class='timeline_section'>
+              <p id='1995_nav' class='navigation'> </p>
 
               <div class='parent'>
                 <div class='date'> 
@@ -67,8 +67,8 @@
               </div>
             </li>
 
-            <li>
-              <p id='2000' class='navigation'> </p>
+            <li id='2000' class='timeline_section'>
+              <p id='2000_nav' class='navigation'> </p>
 
               <div class='parent'>
                 <div class='date'> 
@@ -82,8 +82,8 @@
               </div>
             </li>
 
-            <li>
-              <p id='2002' class='navigation'> </p>
+            <li id='2002' class='timeline_section'>
+              <p id='2002_nav' class='navigation'> </p>
 
               <div class='parent'>
                 <div class='date'> 
@@ -97,8 +97,8 @@
               </div>
             </li>
 
-            <li>
-              <p id='2006' class='navigation'> </p>
+            <li id='2006' class='timeline_section'>
+              <p id='2006_nav' class='navigation'> </p>
 
               <div class='parent'>
                 <div class='date'> 
@@ -113,8 +113,8 @@
             </li>
 
             
-            <li>
-              <p id='2009' class='navigation'> </p>
+            <li id='2009' class='timeline_section'>
+              <p id='2009_nav' class='navigation'> </p>
 
               <div class='parent'>
                 <div class='date'> 
@@ -129,8 +129,8 @@
               </div>
             </li>
 
-            <li style='margin-bottom: 200px'>
-              <p id='2020' class='navigation'> </p>
+            <li id='2020' class='timeline_section' style='margin-bottom: 200px'>
+              <p id='2020_nav' class='navigation'> </p>
 
               <div class='parent'>
                 <div class='date'> 
