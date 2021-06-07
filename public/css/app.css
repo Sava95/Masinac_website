@@ -177,6 +177,11 @@ a.about-us-link:hover {
 
 #arrow_up_circle:hover {
   transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.fa {
+  color: white;
 }
 
 .timeline ul li {

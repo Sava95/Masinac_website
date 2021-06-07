@@ -101,8 +101,12 @@ $("#lang_dropdown").on("mouseleave", function () {
   $("#lang_dropdown").css('opacity', '')
   $("#lang_dropdown").css('display', '')
   $("#lang_dropdown").css('visibility', '')
-
 });
+
+$('.hover_highlight').on('hover', function() {
+  $('#products').css('color', 'white')
+  $('#products').css('transition', '0.4s')
+})
 
 // Home page arrow show/hide 
 $(function(){
@@ -119,7 +123,7 @@ $(function(){
   });
 });
 
-$('#arrow_div').on('click', function(e){
+$('#arrow_div').on('click', function(){
   window.scrollTo(0, 0);
 })
 

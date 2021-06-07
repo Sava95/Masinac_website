@@ -54,7 +54,7 @@
 </div>
 
 <!-- Grupe proizvoda -->
-<div class='slogan d-flex justify-content-center align-items-center' style='visibility: hidden;'>
+<div class='slogan d-flex justify-content-center align-items-center'>
   <p style='margin:0px; font-size: 40px; color:white; font-weight: 700'> SVET MOGUĆNOSTI </p>
 </div>
 

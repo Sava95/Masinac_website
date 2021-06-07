@@ -45,35 +45,35 @@
           
         <div class="dropdown" style='display:flex; align-content: center; justify-content: center;'>
           <div id='products_dropdown' class="dropdown-menu dropdown-menu-right" style='margin: 0px -90px 0px 0px;'>
-              <li class='dropdown-item'>
+              <li class='dropdown-item hover_highlight'>
                 <a href='/products/reze_zatvaraci' class='linkToparagraph'> Reze i zatvaraci </a>
               </li>
 
-              <li class='dropdown-item'>
+              <li class='dropdown-item hover_highlight'>
                 <a href='/products/sarke' class='linkToparagraph'> Šarke </a>
               </li>
 
-              <li class='dropdown-item'>
+              <li class='dropdown-item hover_highlight'>
                 <a href='/products/ugaoni_vezaci' class='linkToparagraph'> Ugaoni vezači </a>
               </li>
 
-              <li class='dropdown-item'>
+              <li class='dropdown-item hover_highlight'>
                 <a href='/products/ravni_vezaci' class='linkToparagraph'> Ravni vezači </a>
               </li>
 
-              <li class='dropdown-item'>
+              <li class='dropdown-item hover_highlight'>
                 <a href='/products/prod_zice' class='linkToparagraph'> Proizvodi od žice </a>
               </li>
 
-              <li class='dropdown-item'>
+              <li class='dropdown-item hover_highlight'>
                 <a href='/products/nosaci' class='linkToparagraph'> Nosači </a>
               </li>
 
-              <li class='dropdown-item'>
+              <li class='dropdown-item hover_highlight'>
                 <a href='/products/pl_masa' class='linkToparagraph'> Prod. od plastičnih masa </a>
               </li>
 
-              <li class='dropdown-item'>
+              <li class='dropdown-item hover_highlight'>
                 <a href='/products/usluge' class='linkToparagraph'> Usluge </a>
               </li>
 

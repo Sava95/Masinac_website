@@ -219,5 +219,10 @@ a.about-us-link:hover{
 
     &:hover {
         transform: translateY(-10px);
+        cursor: pointer;
     }
+}
+
+.fa {
+    color:white;
 }
