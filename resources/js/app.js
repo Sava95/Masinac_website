@@ -4,27 +4,6 @@ require('./bootstrap');
 
 
 //  =============================================== NAVBAR ==========================================================
-// Portfolio caroseul 
-$('.multi-item-carousel').carousel({
-  interval: false
-});
-
-// for every slide in carousel, copy the next slide's item in the slide.
-// Do the same for the next, next item.
-$('.multi-item-carousel .item').each(function(){
-  var next = $(this).next();
-  if (!next.length) {
-    next = $(this).siblings(':first');
-  }
-  next.children(':first-child').clone().appendTo($(this));
-  
-  if (next.next().length>0) {
-    next.next().children(':first-child').clone().appendTo($(this));
-  } else {
-    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-  }
-});
-
 $(function() {
   const indicator = document.querySelector('.nav-indicator');
 
@@ -114,25 +93,6 @@ if (! url.includes('products')){
   });
 }
 
-// Home page arrow show/hide 
-$(function(){
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 420 && window.scrollY < 1600 ) {
-      $("#arrow_up_circle").css('opacity', 1)
-      $("#arrow_up_circle").css('display', 'block')
-      $("#arrow_up_circle").css('visibility', 'visible')
-    } else {
-      $("#arrow_up_circle").css('opacity', '')
-      $("#arrow_up_circle").css('display', '')
-      $("#arrow_up_circle").css('visibility', '')
-    }
-  });
-});
-
-$('#arrow_div').on('click', function(){
-  window.scrollTo(0, 0);
-})
-
 //  =============================================== HOME PAGE ==========================================================
 $('.tab-card').on('click', function(e) {
 
@@ -148,6 +108,27 @@ $('.tab-card').on('click', function(e) {
     
 })
 
+// Home page arrow show/hide 
+$(function(){
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 420 && window.scrollY < 1200 ) {
+      $("#arrow_up_circle").css('opacity', 1)
+      $("#arrow_up_circle").css('display', 'block')
+      $("#arrow_up_circle").css('visibility', 'visible')
+      $("#arrow_up_circle").css('pointer-events', 'auto')
+    } else {
+      $("#arrow_up_circle").css('opacity', '')
+      $("#arrow_up_circle").css('display', '')
+      $("#arrow_up_circle").css('visibility', '')
+      $("#arrow_up_circle").css('pointer-events', 'none')
+      $("#arrow_up_circle").css('pointer', '')
+    }
+  });
+});
+
+$('#arrow_div').on('click', function(){
+  window.scrollTo(0, 0);
+})
 
 //  =============================================== CONTATCT US ==========================================================
 $("#send_email").on('submit', function(e){

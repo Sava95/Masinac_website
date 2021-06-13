@@ -1,4 +1,4 @@
-<footer class="py-2 bg-dark">
+<footer class="py-2" style='background-color:black'>
   <div class="container text-md-left">
     <div class="row d-flex justify-content-between text-md-left mt-3">
 
@@ -59,8 +59,6 @@
     </div>
 
     <!-- Grid row  -->
-    
-    <hr> 
 
     <div class="row d-flex align-items-center">
       <div class="col-md-7 col-lg-8">

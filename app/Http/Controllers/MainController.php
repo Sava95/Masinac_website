@@ -43,9 +43,8 @@ class MainController extends Controller
 
             return view('products', compact('prod_group', 'products'));
         } else {
-            $products = Proizvodi::paginate(16);
-
-            return view('products', compact('products'));
+            
+            return view('products');
         }
     }
 

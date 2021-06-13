@@ -2,7 +2,7 @@
 
 main {
   min-height: 500px;
-  padding-top: 110px;
+  padding-top: 108px;
   padding-bottom: 30px;
   background: url("/images/Masinac---Background.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -113,7 +113,7 @@ a.about-us-link:hover {
   background-image: url(/../images/slogan_background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 280px;
+  height: 180px;
 }
 
 .tab-card {
@@ -128,41 +128,6 @@ a.about-us-link:hover {
 .tab-card:hover {
   transform: translateY(-12px);
   box-shadow: 0 0 0 2px #d0d8df, 0 22px 43px rgba(0, 0, 0, 0.15);
-}
-
-.multi-item-carousel .carousel-inner > .item {
-  transition: 500ms ease-in-out left;
-}
-
-.multi-item-carousel .carousel-inner .active.left {
-  left: -33%;
-}
-
-.multi-item-carousel .carousel-inner .active.right {
-  left: 33%;
-}
-
-.multi-item-carousel .carousel-inner .next {
-  left: 33%;
-}
-
-.multi-item-carousel .carousel-inner .prev {
-  left: -33%;
-}
-
-@media all and (transform-3d), (-webkit-transform-3d) {
-  .multi-item-carousel .carousel-inner > .item {
-    transition: 500ms ease-in-out left;
-    transition: 500ms ease-in-out all;
-    -webkit-backface-visibility: visible;
-            backface-visibility: visible;
-    transform: none !important;
-  }
-}
-
-.multi-item-carousel .carouse-control.left,
-.multi-item-carousel .carouse-control.right {
-  background-image: none;
 }
 
 .hover01 figure:hover img {
@@ -201,6 +166,14 @@ a.about-us-link:hover {
 
 .active-element {
   opacity: 1;
+}
+
+#video_div {
+  width: 1519px;
+  overflow: hidden;
+  display: block;
+  height: 550px;
+  padding: 0px;
 }
 
 .timeline ul li {

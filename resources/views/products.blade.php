@@ -64,22 +64,43 @@
         </div>
 
         <div class="card-body row" style=' min-height:500px'>
-
-          @foreach($products as $product)
-            <div id='{{$product->id}}' class='card productHighlight ' style='width:220px; padding:0px; margin:10px; height: 232px;'>
-              <img src="{{$product->slika}}" alt='{{$product->naziv}}' class="imageCenter" >
-              
-              <p class='prodLink' > {{$product->naziv}} </p>
+          @isset($products)
+            @foreach($products as $product)
+              <div id='{{$product->id}}' class='card productHighlight ' style='width:220px; padding:0px; margin:10px; height: 232px;'>
+                <img src="{{$product->slika}}" alt='{{$product->naziv}}' class="imageCenter" >
+                
+                <p class='prodLink' > {{$product->naziv}} </p>
+              </div>
+            @endforeach
+            <div style='margin-left:20px'>
+                {{$products->links('pagination::bootstrap-4')}}
             </div>
-          @endforeach
 
-     
-        
+          @else 
+          <div style='margin-left:10px'>
+            <h3> Usluge </h3>
+
+            <p> Pored usluga asortimanske proizvodnje firma Masinac kako bi zadovoljila svoje klijente pruza sledece usluge :</p>
+
+            <ul> 
+              <li> Izrade alata za savijanje, probijanje I prosecanje lima  </li>
+              <li> Stancovanje delova od lima na ekscentar presama do 60 tona, savijanje na hidraulicnim presama, mogucnost zavarivanja I punktovanja istih. </li>
+              <li> Secenja lima na trake </li> 
+              <li> Izrata delova od zice po tehnickom crtezu kao I valjanje navoja </li> 
+              <li> Izrade zahtevnih delova na masini “BIHLER” za veliko serijske I masovne proizvodnje </li>
+            </ul>
+
+
+            <div class='row'>
+              <p style='padding-right:10px'> Tehnicke crteze I sva vasa pitanja postavljajte na e-mail: </p>
+              <a href='#'> link </a> 
+            </div> 
+
+          </div> 
+          @endisset
         </div>
 
-        <div style='margin-left:20px'>
-            {{$products->links('pagination::bootstrap-4')}}
-        </div>
+
         
       </div>
     </div>

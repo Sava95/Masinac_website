@@ -40,6 +40,9 @@
     <div class="row">
       <ul class="navbar-nav ml-auto" style='margin-right: 40px; margin-top: 40px'>
         <a id='home' href="{{ route('home') }}" class="nav-item nav_item_down" style='margin-right:5px;  text-transform: uppercase;'active-color="#ff3333">{{ __('ui.home') }}</a>
+
+        <a id='about_us' href="{{ route('about_us') }}" class="nav-item nav_item_down" style='margin-right:5px; text-transform: uppercase;'active-color="#ff3333">{{ __('ui.about_us') }}</a>
+
         <a id='products' href="{{ route('products') }}" class="nav-item nav_item_down"
           style='margin-right:5px; text-transform: uppercase' active-color="#ff3333">{{ __('ui.products') }}</a>
           
@@ -81,10 +84,7 @@
 
         </div>
 
-
         <a id='galery' href="{{ route('galery') }}" class="nav-item nav_item_down" style='margin-right:5px; text-transform: uppercase;'active-color="#ff3333">{{ __('ui.galery') }}</a>
-
-        <a id='about_us' href="{{ route('about_us') }}" class="nav-item nav_item_down" style='margin-right:5px; text-transform: uppercase;'active-color="#ff3333">{{ __('ui.about_us') }}</a>
 
         <a id='contact' href="{{ route('contact') }}" class="nav-item nav_item_down" style='text-transform: uppercase;' active-color="#ff3333"> {{ __('ui.contact') }}
         </a>
