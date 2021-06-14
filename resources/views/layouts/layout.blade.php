@@ -26,7 +26,7 @@
 <body>
     @include('layouts._nav')
 
-    <main>
+    <main id='main'>
         @yield('content')
     </main>
 

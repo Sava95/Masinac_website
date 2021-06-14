@@ -91,9 +91,9 @@
             </ul>
 
 
-            <div class='row'>
-              <p style='padding-right:10px'> Tehnicke crteze I sva vasa pitanja postavljajte na e-mail: </p>
-              <a href='#'> link </a> 
+            <div class='row' style='margin-left:0px'>
+              <p style='padding-right:10px'> Tehničke crteže I sva Vaša pitanja postavljajte na e-mail: </p>
+              <a href='#'> masinacusluge@gmail.com </a> 
             </div> 
 
           </div> 

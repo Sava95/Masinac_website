@@ -191,6 +191,12 @@ $("#send_email").on('submit', function(e){
 
 }); //  $("#send_email").on('submit', function(e){ 
 
+// Main tag - Delete padding-bottom 
+
+if (window.location.href.includes('contact')) {
+  $('#main').css('padding-bottom', '0px');
+}
+
 //  =============================================== PRODUCTS ==========================================================
 
 //   Products Page - Product Details Redirect  
@@ -394,3 +400,5 @@ $(function(){
     }
   });
 });
+
+// Galery 

@@ -19,7 +19,7 @@ $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
 main {
-   min-height:500px; 
+   min-height:800px; 
    padding-top:108px; 
    padding-bottom: 30px;
 
@@ -222,4 +222,7 @@ a.about-us-link:hover{
     padding:0px
 }  
 
-// style='padding-left: 0px;padding-right: 0px; height:500px
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
