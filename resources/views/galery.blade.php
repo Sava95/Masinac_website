@@ -53,7 +53,6 @@
             <img style="width:250px; height:250px" src="https://via.placeholder.com/150">
           </a>
       </div>
-    </div>
       <a class="carousel-control-prev"  style='left:-126px' href="#slike" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -65,6 +64,64 @@
       </a>
     </div>
     
+    <h4 style='margin-top:30px'> Druge slike </h4> 
+
+    <div id="dr_slike" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="images\Plain_rim.jpg" style='margin-right:10px' data-lightbox="dr_slike" data-title="My caption" > 
+            <img style="width:250px; height:250px" src="/images/Plain_rim.jpg" > 
+          </a>
+          <a href="images\Plain_rim.jpg" style='margin-right:10px'data-lightbox="dr_slike" data-title="My caption"> 
+            <img style="width:250px; height:250px" src="https://via.placeholder.com/150">
+          </a>
+          <a href="images\Plain_rim.jpg" style='margin-right:10px' data-lightbox="dr_slike" data-title="My caption"> 
+            <img style="width:250px; height:250px" src="/images/Plain_rim.jpg" > 
+          </a>
+          <a href="images\Plain_rim.jpg" data-lightbox="dr_slike" data-title="My caption"> 
+            <img style="width:250px; height:250px" src="/images/Plain_rim.jpg" > 
+          </a>
+      </div>
+
+      <div class="carousel-item">
+          <a href="images\Plain_rim.jpg" style='margin-right:10px' data-lightbox="dr_slike" data-title="My caption" > 
+            <img style="width:250px; height:250px" src="/images/Plain_rim.jpg" > 
+          </a>
+          <a href="images\Plain_rim.jpg" style='margin-right:10px'data-lightbox="dr_slike" data-title="My caption"> 
+            <img style="width:250px; height:250px" src="https://via.placeholder.com/150">
+          </a>
+          <a href="images\Plain_rim.jpg" style='margin-right:10px' data-lightbox="dr_slike" data-title="My caption"> 
+            <img style="width:250px; height:250px" src="https://via.placeholder.com/150">
+          </a>
+          <a href="images\Plain_rim.jpg" data-lightbox="dr_slike" data-title="My caption"> 
+            <img style="width:250px; height:250px" src="/images/Plain_rim.jpg" > 
+          </a>
+      </div>
+
+      <div class="carousel-item">
+          <a href="images\Plain_rim.jpg" style='margin-right:10px' data-lightbox="dr_slike" data-title="My caption" > 
+            <img style="width:250px; height:250px" src="/images/Plain_rim.jpg" > 
+          </a>
+          <a href="images\Plain_rim.jpg" style='margin-right:10px'data-lightbox="dr_slike" data-title="My caption"> 
+            <img style="width:250px; height:250px" src="https://via.placeholder.com/150">
+          </a>
+          <a href="images\Plain_rim.jpg" style='margin-right:10px' data-lightbox="dr_slike" data-title="My caption"> 
+            <img style="width:250px; height:250px" src="https://via.placeholder.com/150">
+          </a>
+          <a href="images\Plain_rim.jpg" data-lightbox="dr_slike" data-title="My caption"> 
+            <img style="width:250px; height:250px" src="https://via.placeholder.com/150">
+          </a>
+      </div>
+      <a class="carousel-control-prev"  style='left:-126px' href="#dr_slike" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      
+      <a class="carousel-control-next" style='left:1000px' href="#dr_slike" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
 
 
 
