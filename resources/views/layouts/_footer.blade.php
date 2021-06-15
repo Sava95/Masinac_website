@@ -1,4 +1,4 @@
-<footer class="py-2" style='background-color:black'>
+<footer class="py-2" style='background-color:#14141c'>
   <div class="container text-md-left">
     <div class="row d-flex justify-content-between text-md-left mt-3">
 
