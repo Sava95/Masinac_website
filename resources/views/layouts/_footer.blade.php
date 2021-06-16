@@ -3,9 +3,9 @@
     <div class="row d-flex justify-content-between text-md-left mt-3">
 
       <!-- Grid column -->
-      <div class="col-md-3 col-lg-3 col-xl-3 mt-3 text-white">
+      <div class="col-md-4 col-lg-4 col-xl-4 mt-4 text-white">
         <h4 > PROIZVODNJA </h1>
-        <h6> MAŠINAC PLUS: <h6>
+        <h6> MAŠINAC PLUS: </h6>
 
         <div class="col pt-2">
             <p style='margin-bottom: 5px;'> Čegarska BB </p>
@@ -15,9 +15,9 @@
         </div>
       </div>
 
-      <div class="col-md-3 col-lg-3 col-xl-3 mt-3 text-white">
+      <div class="col-md-4 col-lg-4 col-xl-4 mt-4 text-white">
         <h4 > VELEPRODAJA </h1>
-        <h6> MAŠINAC PLUS: <h6>
+        <h6> MAŠINAC PLUS: </h6>
 
         <div class="col pt-2">
             <p style='margin-bottom: 5px;'> Čegarska BB </p>
@@ -28,7 +28,7 @@
             <p> Pon - Sub: 07-15h </p>
       </div>
 
-      <div class="col-md-3 col-lg-3 col-xl-3 mt-3 text-white">
+      <div class="col-md-4 col-lg-4 col-xl-4 mt-4 text-white">
         <h4 style='margin-bottom: 5px;' > MALOPRODAJA </h1>
         
         <div class="col pt-2">
@@ -44,18 +44,6 @@
 
       </div>
 
-      
-      <!-- Grid column -->
-      <div class="col-md-3 col-lg-3 col-xl-3 mt-3 text-white">
-        <h4 style='margin-bottom: 5px;' > KONTAKT </h1>
-
-        <div class="col pt-2">
-          <p style='margin-bottom: 5px;'> Aranđelovac, AR 34300, RS </p>
-          <p style='margin-bottom: 5px;'> office@masinacserbia.rs </p>
-          <p> +381 34 6790-545 </p>
-        </div>
-      </div>
-    
     </div>
 
     <!-- Grid row  -->
@@ -63,9 +51,7 @@
     <div class="row d-flex align-items-center">
       <div class="col-md-7 col-lg-8">
         <p class="text-center text-md-left text-white">© 2020 Copyright:
-          <a href="#">
-            <strong style='color:white'> Mašinac D.O.O </strong>
-          </a>
+          <strong style='color:white'> Mašinac D.O.O </strong>
         </p>
 
       </div>

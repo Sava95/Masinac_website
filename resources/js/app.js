@@ -111,7 +111,7 @@ $('.tab-card').on('click', function(e) {
 // Home page arrow show/hide 
 $(function(){
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 420 && window.scrollY < 1200 ) {
+    if (window.scrollY > 420 ) {
       $("#arrow_up_circle").css('opacity', 1)
       $("#arrow_up_circle").css('display', 'block')
       $("#arrow_up_circle").css('visibility', 'visible')
@@ -349,56 +349,65 @@ $('#search_product').on('keyup', function() {
 $(function(){
   window.addEventListener('scroll', () => {
     console.log(window.scrollY)
-    if (window.scrollY < 200) {
+    if (window.scrollY < 400) {
       $('.active-element').removeClass('active-element')
 
       $('#1970').addClass('active-element');
       $('#1970_link').addClass('active-element');
 
-    } else if (window.scrollY < 450) { 
+    } else if (window.scrollY < 870) { 
       $('.active-element').removeClass('active-element')
 
       $('#1992').addClass('active-element');
       $('#1992_link').addClass('active-element');
 
-    } else if (window.scrollY < 700) { 
+    } else if (window.scrollY < 1300) { 
       $('.active-element').removeClass('active-element')
 
       $('#1995').addClass('active-element');
       $('#1995_link').addClass('active-element');
 
-    } else if (window.scrollY < 950) { 
+    } else if (window.scrollY < 1800) { 
       $('.active-element').removeClass('active-element')
 
       $('#2000').addClass('active-element');
       $('#2000_link').addClass('active-element');
 
-    } else if (window.scrollY < 1200) { 
+    } else if (window.scrollY < 2150) { 
       $('.active-element').removeClass('active-element')
 
       $('#2002').addClass('active-element');
       $('#2002_link').addClass('active-element');
 
-    } else if (window.scrollY < 1450) { 
+    } else if (window.scrollY < 2600) { 
       $('.active-element').removeClass('active-element')
 
       $('#2006').addClass('active-element');
       $('#2006_link').addClass('active-element');
 
-    } else if (window.scrollY < 1700) { 
+    } else if (window.scrollY < 3100) { 
       $('.active-element').removeClass('active-element')
 
       $('#2009').addClass('active-element');
       $('#2009_link').addClass('active-element');
 
-    } else if (window.scrollY < 1950) { 
+    } else { 
       $('.active-element').removeClass('active-element')
 
       $('#2020').addClass('active-element');
       $('#2020_link').addClass('active-element');
 
     }
+
+    if (window.scrollY > 3548) {
+      $('#years_sidebar').css('top', 187 - (window.scrollY -3548 ) )
+    } else { 
+      $('#years_sidebar').css('top', 187)
+    }
+
   });
 });
+
+
 
 // Galery 

@@ -186,10 +186,18 @@ a.about-us-link:hover {
   filter: invert(100%);
 }
 
+footer h4 {
+  font-family: "DM Sans", sans-serif;
+}
+
+footer h6 {
+  font-family: "DM Sans", sans-serif;
+}
+
 .timeline ul li {
   list-style-type: none;
   position: relative;
-  width: 6px;
+  width: 3px;
   margin: 0 auto;
   padding-top: 50px;
   background: black;
@@ -212,12 +220,9 @@ a.about-us-link:hover {
 .timeline ul li div.parent {
   position: relative;
   bottom: 0;
-  width: 400px;
-  height: 200px;
   padding: 15px;
-  background-image: url("https://via.placeholder.com/400x200");
   background-repeat: no-repeat;
-  border-radius: 5px;
+  z-index: 1;
 }
 
 .timeline ul li:nth-child(odd) div.child {
@@ -235,6 +240,7 @@ a.about-us-link:hover {
   border-radius: 25px;
   border-width: 1px;
   background-color: white;
+  z-index: 0;
 }
 
 .timeline ul li:nth-child(even) div.child {
@@ -252,13 +258,15 @@ a.about-us-link:hover {
   border-radius: 25px;
   border-width: 1px;
   background-color: white;
+  z-index: 2;
 }
 
 .timeline ul li:nth-child(odd) div.date {
   position: absolute;
-  left: 360px;
+  left: 230px;
   top: -30px;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .timeline ul li:nth-child(even) div.date {
@@ -266,35 +274,7 @@ a.about-us-link:hover {
   right: 360px;
   top: -30px;
   font-size: 18px;
-}
-
-.timeline ul li div.parent::before {
-  content: "";
-  position: absolute;
-  bottom: 50px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-
-.timeline ul li:nth-child(even) div.parent {
-  left: 45px;
-}
-
-.timeline ul li:nth-child(even) div.parent::before {
-  left: -15px;
-  border-width: 8px 16px 8px 0;
-  border-color: transparent #F45B69 transparent transparent;
-}
-
-.timeline ul li:nth-child(odd) div.parent {
-  left: -439px;
-}
-
-.timeline ul li:nth-child(odd) div.parent::before {
-  right: -15px;
-  border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #F45B69;
+  font-weight: bold;
 }
 
 .navigation {
@@ -304,6 +284,70 @@ a.about-us-link:hover {
 
 html {
   scroll-behavior: smooth;
+}
+
+.parent_1 {
+  background-image: url("/images/slika 1. o nama.jpg?ef67992c7e44bb34091d35b5a63087b4");
+  background-size: contain;
+  height: 350px;
+  width: 500px;
+  left: -530px;
+}
+
+.parent_2 {
+  background-image: url("/images/slika 2. o nama.jpg?e15dde0ffa6a517202edd28292750aad");
+  background-size: contain;
+  height: 460px;
+  width: 600px;
+  left: 40px;
+}
+
+.parent_3 {
+  background-image: url("/images/slika 3. o nama.jpg?0725de2ceca30229bff54b916f7d5464");
+  background-size: contain;
+  height: 350px;
+  width: 500px;
+  left: -530px;
+}
+
+.parent_4 {
+  background-image: url("/images/slika 4. o nama.jpg?ddb52b36e0b915335ca6dc2c80e6b806");
+  background-size: contain;
+  height: 460px;
+  width: 600px;
+  left: 40px;
+}
+
+.parent_5 {
+  background-image: url("/images/slika 5. o nama.jpg?35442342d215b01926654c125389f5f2");
+  background-size: contain;
+  height: 350px;
+  width: 500px;
+  left: -530px;
+}
+
+.parent_6 {
+  background-image: url("/images/slika 6. o nama.jpg?122142c979c7c293ab777045a4b67d3a");
+  background-size: contain;
+  height: 460px;
+  width: 500px;
+  left: 40px;
+}
+
+.parent_7 {
+  background-image: url("/images/slika 7. o nama.jpg?ddc9c7e0e2dca2ffea71a097e356fad8");
+  background-size: contain;
+  height: 350px;
+  width: 500px;
+  left: -530px;
+}
+
+.parent_8 {
+  background-image: url("/images/slika 8. o nama.jpg?6e00fbfd0fe35909839d2c2030344d90");
+  background-size: contain;
+  height: 460px;
+  width: 500px;
+  left: 40px;
 }
 
 /*!

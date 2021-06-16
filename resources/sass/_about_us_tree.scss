@@ -1,7 +1,7 @@
 .timeline ul li {      //line
     list-style-type: none;
     position: relative;
-    width: 6px;
+    width: 3px;
     margin: 0 auto;
     padding-top: 50px;
     background: black;
@@ -24,12 +24,10 @@
 .timeline ul li div.parent { //image
     position: relative;
     bottom: 0;
-    width: 400px;
-    height: 200px;
     padding: 15px;
-    background-image: url('https://via.placeholder.com/400x200');
     background-repeat: no-repeat;
-    border-radius: 5px;
+    z-index: 1;
+
 }
 
 .timeline ul li:nth-child(odd) div.child { //text
@@ -45,6 +43,7 @@
     border-radius: 25px;
     border-width: 1px;
     background-color: white;
+    z-index: 0;
 }
 
 .timeline ul li:nth-child(even) div.child { //text
@@ -60,13 +59,15 @@
     border-radius: 25px;
     border-width: 1px;
     background-color: white;
+    z-index: 2;
 }
 
 .timeline ul li:nth-child(odd) div.date { //date
     position: absolute;
-    left: 360px;
+    left: 230px;
     top: -30px;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .timeline ul li:nth-child(even) div.date { //date
@@ -74,36 +75,7 @@
     right: 360px;
     top: -30px;
     font-size: 18px;
-}
-
-
-.timeline ul li div.parent::before { // arrow
-    content: '';
-    position: absolute;
-    bottom: 50px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-}
-
-.timeline ul li:nth-child(even) div.parent {// parent position
-    left: 45px;
-}
-   
-.timeline ul li:nth-child(even) div.parent::before { // arrow position
-    left: -15px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent #F45B69 transparent transparent;
-}
-
-.timeline ul li:nth-child(odd) div.parent { // parent position
-  left: -439px;
-}
- 
-.timeline ul li:nth-child(odd) div.parent::before { // arrow position
-  right: -15px;
-  border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #F45B69;
+    font-weight: bold;
 }
 
 .navigation {
@@ -114,3 +86,67 @@
 html {
     scroll-behavior: smooth;
   }
+
+.parent_1 {
+    background-image: url('../../public/images/about_us/slika 1. o nama.jpg');  
+    background-size: contain;
+    height: 350px;
+    width: 500px;
+    left: -530px;
+}
+
+.parent_2 {
+    background-image: url('../../public/images/about_us/slika 2. o nama.jpg');  
+    background-size: contain;
+    height: 460px;
+    width: 600px;   
+    left: 40px;
+}
+
+.parent_3 {
+    background-image: url('../../public/images/about_us/slika 3. o nama.jpg');  
+    background-size: contain;
+    height: 350px;
+    width: 500px;
+    left: -530px;
+}
+
+.parent_4 {
+    background-image: url('../../public/images/about_us/slika 4. o nama.jpg');  
+    background-size: contain;
+    height: 460px;
+    width: 600px;   
+    left: 40px;
+}
+
+.parent_5 {
+    background-image: url('../../public/images/about_us/slika 5. o nama.jpg');  
+    background-size: contain;
+    height: 350px;
+    width: 500px;
+    left: -530px;
+}
+
+.parent_6 {
+    background-image: url('../../public/images/about_us/slika 6. o nama.jpg');  
+    background-size: contain;
+    height: 460px;
+    width: 500px;   
+    left: 40px;
+}
+
+.parent_7 {
+    background-image: url('../../public/images/about_us/slika 7. o nama.jpg');  
+    background-size: contain;
+    height: 350px;
+    width: 500px;
+    left: -530px;
+}
+
+.parent_8 {
+    background-image: url('../../public/images/about_us/slika 8. o nama.jpg');  
+    background-size: contain;
+    height: 460px;
+    width: 500px;   
+    left: 40px;
+}
