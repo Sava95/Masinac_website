@@ -6,7 +6,7 @@
   
     <!-- Confirmation/Error messages -->
     <div id="success_message" class="alert alert-success" role="alert" style=" display:none; position:fixed; z-index: 1; margin-top:8px;
-        width: 63.5%"> <b> Message sent </b>
+        width: 63.5%"> <b> {{ __('ui.poslata_poruka') }} </b>
     </div>
 
     <div id="error_message" class="alert alert-danger" role="alert" style="display:none; position:fixed; z-index: 1;  margin-top:8px; width: 63.5%"> 
@@ -14,10 +14,10 @@
 
     <div id="loader" style="display:none; position:fixed; z-index: 1; margin: 7% 32.94%">
         <div class="loader">   </div>
-        <div> Loading ... </div>
+        <div> {{ __('ui.ucitavanje') }} </div>
     </div>
 
-    <h1> <strong> Contact us  </strong> </h1>
+    <h1> <strong> {{ __('ui.contact') }}  </strong> </h1>
 
     <!-- Upper -->
     <div class="row d-flex">
@@ -29,12 +29,12 @@
             <!-- First Row -->
             <div class='row'> 
               <div class="col-md-6 form-group">
-                <label for='name'> Name </label>
+                <label for='name'> {{ __('ui.ime') }} </label>
                 <input type='text' id='name' name='name' class='form-control' required />
               </div>
 
               <div class="col-md-6 form-group">
-                <label for='email'> Email </label>
+                <label for='email'>  Email </label>
                 <input type='email' id='email' name='email' class='form-control' required />
               </div>
             </div>
@@ -42,22 +42,22 @@
             <!-- Secound Row -->
             <div class='row'>
               <div class="col-md-6 form-group">
-                <label for='country'> Country/City </label>
+                <label for='country'> {{ __('ui.zemlja') }}  </label>
                 <input type='text' id='country' name='country' class='form-control' required />
               </div>
 
               <div class="col-md-6 form-group">
-                <label for='phone'> Phone </label>
+                <label for='phone' >{{ __('ui.telefon') }}  </label>
                 <input type='text' id='phone' name='phone' class='form-control' required />
               </div>          
             </div>
 
             <div class="form-group">
-              <label for='message'> Message </label>
+              <label for='message'>{{ __('ui.poruka') }} </label>
               <textarea id='message' name='message' class='form-control' required> </textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary"> Submit </button>
+            <button type="submit" class="btn btn-primary"> {{ __('ui.posalji') }} </button>
 
           </form>
         </div>
@@ -67,9 +67,9 @@
         <h4 class="text-uppercase mb-4"> <strong> Masinac RS </strong> </h4>
         <p style='margin-bottom: 0.5rem;'> Aranđelovac, AR 34300, RS </p>
         <p style='margin-bottom: 0.5rem;'> Email: office@masinacserbia.rs </p>
-        <p style='margin-bottom: 0.5rem;'> Production tel. +381 34 6790-545 </p>
-        <p style='margin-bottom: 0.5rem;'> Retail production tel. +381 34 6790-545 </p>
-        <p style='margin-bottom: 0.5rem;'> Mass prodcution tel. +381 34 6790-545 </p>
+        <p style='margin-bottom: 0.5rem;'> {{ __('ui.productio_tel') }} +381 34 6790-545 </p>
+        <p style='margin-bottom: 0.5rem;'> {{ __('ui.retail_tel') }} +381 34 6790-545 </p>
+        <p style='margin-bottom: 0.5rem;'> {{ __('ui.mass_prod_tel') }} +381 34 6790-545 </p>
 
       </div>
     </div>

@@ -2,10 +2,11 @@
 
 @section('content')
   <div class='container' style='padding-top:20px'> 
-    <h1> Galery </h1> 
+    <h1>  {{ __('ui.galery') }}  </h1> 
     <hr>
 
-    <h4> Slike </h4> 
+    <h4 class='nasi_proizvodi'> {{ __('ui.primena') }}  </h4> 
+    <p style='margin-top: 15px; font-size: 20px'> {{ __('ui.primena_moto') }} </p>
 
     <div id="slike" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -64,7 +65,8 @@
       </a>
     </div>
     
-    <h4 style='margin-top:30px'> Druge slike </h4> 
+    <h4 class='nasi_proizvodi' style='margin-top:30px'> {{ __('ui.montaza') }} </h4> 
+    <p style='margin-top: 15px; font-size: 20px'> {{ __('ui.montaza_moto') }} </p>
 
     <div id="dr_slike" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">

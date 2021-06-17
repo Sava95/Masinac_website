@@ -1,10 +1,10 @@
-<footer class="py-2" style='background-color:#14141c'>
+<footer class="py-2" style='background-color:black'>
   <div class="container text-md-left">
     <div class="row d-flex justify-content-between text-md-left mt-3">
 
       <!-- Grid column -->
       <div class="col-md-4 col-lg-4 col-xl-4 mt-4 text-white">
-        <h4 > PROIZVODNJA </h1>
+        <h4> {{ __('ui.production') }} </h4>
         <h6> MAŠINAC PLUS: </h6>
 
         <div class="col pt-2">
@@ -16,7 +16,7 @@
       </div>
 
       <div class="col-md-4 col-lg-4 col-xl-4 mt-4 text-white">
-        <h4 > VELEPRODAJA </h1>
+        <h4 >  {{ __('ui.wholesale') }}  </h4>
         <h6> MAŠINAC PLUS: </h6>
 
         <div class="col pt-2">
@@ -24,12 +24,12 @@
             <p style='margin-bottom: 5px;'> Aranđelovac, Serbia </p>
             <p> +381 34 6790 545 </p>
         </div>
-        <h6 style='padding-left:0px'> Radno vreme: </h6>
+        <h6 style='padding-left:0px'>  {{ __('ui.work_hours') }} </h6>
             <p> Pon - Sub: 07-15h </p>
       </div>
 
       <div class="col-md-4 col-lg-4 col-xl-4 mt-4 text-white">
-        <h4 style='margin-bottom: 5px;' > MALOPRODAJA </h1>
+        <h4 style='margin-bottom: 5px;' > {{ __('ui.retail') }} </h1>
         
         <div class="col pt-2">
             <p style='margin-bottom: 5px;'> Kralja Petra BB</p>
@@ -37,7 +37,7 @@
             <p'> +381 34 720 916 </p>
         </div>
 
-        <h6> Radno vreme: </h6>
+        <h6> {{ __('ui.work_hours') }}  </h6>
         <p style='margin-bottom: 5px;'> Pon - Pet: 07-19h </p>
         <p style='margin-bottom: 5px;'> Sub: 07-15h </p>
         <p style='margin-bottom: 5px;'> Ned: 07-14h </p>

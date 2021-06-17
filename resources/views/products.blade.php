@@ -2,7 +2,7 @@
 
 @section('content')
   <div class='container' style='padding-top:20px'> 
-    <h1> Products </h1> 
+    <h1> {{ __('ui.products') }}   </h1> 
     <hr>
   </div> 
   
@@ -15,37 +15,37 @@
     <div class="col-md-2 " style="margin-left:5rem" data-simplebar>
       <div class="card" style="width: 15.7rem; position:absolute">
           <div class="card-header bg-steel" style="font-weight: 600">
-            Product List:
+            {{ __('ui.prod_list') }}  
           </div>
 
           <div id="goal-navigation" class="list-group d-flex justify-content-between">
       
               <a href='/products/reze_zatvaraci' id='reze_zatvaraci' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'> 
-                REZE I ZATVARAČ 
+                {{ __('ui.reze_zatvaraci') }} 
               </a>
 
-              <a href='/products/sarke' id='sarke' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>ŠARKE</a>
+              <a href='/products/sarke' id='sarke' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>  {{ __('ui.sarke') }}  </a>
 
               <a href='/products/ugaoni_vezaci' id='ugaoni_vezaci' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>
-                UGAONI VEZAČI 
+              {{ __('ui.ugaoni_vezaci') }} 
               </a>
 
               <a href='/products/ravni_vezaci' id='ravni_vezaci' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>
-                RAVNI VEZČI 
+              {{ __('ui.ravni_vezaci') }}
               </a>
 
               <a href='/products/prod_zice' id='prod_zice' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>
-                PROIZVODI OD ŽICE
+              {{ __('ui.prod_zice') }} 
               </a>
               
-              <a href='/products/nosaci' id='nosaci' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>NOSAČI </a>
+              <a href='/products/nosaci' id='nosaci' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'> {{ __('ui.nosaci') }}  </a>
 
               <a href='/products/pl_masa' id='pl_masa' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>
-                PROD. OD PLASTIČNIH MASA 
+              {{ __('ui.pl_masa') }} 
               </a>
 
               <a href='/products/usluge' id='usluge' class="list-group-item list-group-item-action prodListItem" style='color:black; border:0px'>
-                USLUGE
+              {{ __('ui.usluge') }} 
               </a>
 
           </div>
@@ -57,7 +57,7 @@
       <div class="card">
         <div class="card-header">
           <div class="row">
-            <p style='display:flex; align-items: center; margin:0px 20px 0px 10px'> Search product by name: </p>
+            <p style='display:flex; align-items: center; margin:0px 20px 0px 10px'> {{ __('ui.search_prod') }}  </p>
             <input id='search_product' type='text' class='form-control' style='width:450px; margin-right: 240px' placeholder='Search'> 
             </input>
           </div>

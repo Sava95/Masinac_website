@@ -92,7 +92,7 @@
         <span class="nav-indicator"></span>
       </ul>
 
-      <ul class="navbar-nav">
+      <ul class="navbar-nav" style='margin-right:50px'>
         <div class="dropdown" style='height:30px'>
             <a  class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style='color:white; margin-top:50px;'> 
                             

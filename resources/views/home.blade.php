@@ -22,14 +22,14 @@
 <div class='slogan d-flex justify-content-center align-items-center'>
   <p style='margin:0px; font-size: 40px; color:white; font-weight: 700'>
     <img src='../images/Masinac---Logo---White.png' alt='Logo'>  
-    <i> SVET MOGUĆNOSTI </i> 
+    <i> {{ __('ui.world_of_possibilities') }} </i> 
   </p>
 </div>
 
 <div class='container'>
   <div style='margin: 60px 0px'>
-      <h3 class='nasi_proizvodi'> Naši proizvodi </h3>
-      <p style='margin-top: 15px; font-size: 20px'> Ne ograničavaj vaš um. Budite kreativni uz proizvode mašinac. </p>
+      <h3 class='nasi_proizvodi'> {{ __('ui.our_prod') }} </h3>
+      <p style='margin-top: 15px; font-size: 20px'> {{ __('ui.our_prod_moto') }} </p>
   </div>
 
   <div class='row'>
