@@ -14,15 +14,15 @@ return [
     'wholesale' => 'VELEPRODAJA',
     'retail' => 'MALOPRODAJA',
     'work_hours' => 'Radno vreme: ',
-    'prica_koja_traje' => 'PRIČA KOJA TRAJE',
+    'story_that_lasts' => 'PRIČA KOJA TRAJE',
 
     '1970' => '70-tih godina prošlog veka Đorđije Simikić otvorio je kovačku radionicu I pružanjm usluga,olakšavao rad svojim         komšijama I meštanima  okolnih mesta U oblasti zanatstva I poljoprivrede. ',
 
     '1992' => ' Detinjstvo uz oca kovača, znanje usvojeno tokom studija, dovode do opredeljenja životnog poziva. 15.01.1991.god.Željko Simikić sa suprugom Natalijom osniva gvožđarsku radnju SZTR Mašinac. U okviru radnje organizovan je deo za pružanje usluga obrade metala na univerzalnom strugu I izrade gotovih proizvoda.',
 
-    '1995' => 'Veća potražnja stanovništva za proizvodima I robom, stvorilo je potrebu za još jednim prodajnim objektom. Ublizini porodičnog doma u ulici Čegarska 23, počinje da radi izdvojeni deo firme Mašinac. Proizvodna hala je opremljena sa nekoliko industrijskih mašina, a u okviru hale je organizovan I magacin veleprodaje.  ',
+    '1995' => 'Veća potražnja stanovništva za proizvodima I robom, stvorilo je potrebu za još jednim prodajnim objektom. U blizini porodičnog doma u ulici Čegarska 23, počinje da radi izdvojeni deo firme Mašinac. Proizvodna hala je opremljena sa nekoliko industrijskih mašina, a u okviru hale je organizovan I magacin veleprodaje.  ',
 
-    '2000' => 'Uproizvodnoj hali organizuje se process malo serijske proizvodnje nekoliko grupa gotovih proizvoda koji su postal zaštitni znak firme. Kao prvi I početni proiyvodi su rajber vijci, g-vijci, luste kuke, reze I breoni drugi.',
+    '2000' => 'U proizvodnoj hali organizuje se process malo serijske proizvodnje nekoliko grupa gotovih proizvoda koji su postal zaštitni znak firme. Kao prvi I početni proiyvodi su rajber vijci, g-vijci, luste kuke, reze I breoni drugi.',
 
     '2002' => 'Rad I zalaganje, kao I poslovna politika dovode do proširenja tržišta. Kvalitetom, širinom asortimana I konkutentnim cenama, pridobijeni su kupci iz regiona. Spoljnotrgovinski promet firme čini 45% ukupnog prometa.',
 
@@ -30,9 +30,8 @@ return [
 
     '2009' => 'Razvoj firme, veći obim proizvodnje, zahtevao je I povećanje produktivnost rada. Prateći trendove u industriji , u proces  rada se uvodi nova mašina. Erozimat sa žicom fanuk za proizvodnju alata, za sopstvene potrebe.',
 
-    '2020' => 'Novi proizvodi, nove industrijske mašine, novi radnici iziskivali. Su I novi radni prostor. Menadzment firme donosi odluku o početku izgradnje još jedne proizvodne hale, kako bi se omogućile nove  operacije proizvodnog procesa.',
+    '2020' => 'Novi proizvodi, nove industrijske mašine, novi radnici izazvali su i novi radni prostor. Menadzment firme donosi odluku o početku izgradnje još jedne proizvodne hale, kako bi se omogućile nove  operacije proizvodnog procesa.',
 
-    'products' => 'Produkti',
     'prod_list' => 'Lista produkata:',
 
     'reze_zatvaraci' => 'REZE I ZATVARAČ',
@@ -49,7 +48,7 @@ return [
     'primena_moto' => 'Naši proizvodi imaju široku primenu u svim oblastima vaše svakodnevnice',
     'montaza_moto' => 'Montirajte brzo i lako uz pomoć naših tutorijala',
     'poslata_poruka' => 'Poruka poslata',
-    'ucitavanje' => 'Učitavanje',
+    'ucitavanje' => 'Učitavanje...',
     'ime' => 'Ime',
     'zemlja' => 'Država/Grad',
     'telefon' => 'Telefon',
@@ -58,11 +57,6 @@ return [
     'productio_tel' => 'Proizvodnja tel.',
     'retail_tel' => 'Maloprodaja tel.',
     'mass_prod_tel' => 'Veleprodaja tel.',
-    '' => '',
-    '' => '',
-
-
-
 ]
 
 ?>

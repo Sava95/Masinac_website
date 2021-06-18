@@ -3,7 +3,7 @@
 
 @section('content')
   <div class='container-fluid' style='padding-top:20px'> 
-    <h3 style='margin-left:240px; margin-bottom:30px; font-family:"DM Sans", sans-serif'> {{ __('ui.prica_koja_traje') }} </h3>
+    <h3 style='margin-left:240px; margin-bottom:30px; font-family:"DM Sans", sans-serif'> {{ __('ui.story_that_lasts') }} </h3>
 
     <div class="row">
       <div id='years_sidebar' style='position:fixed; padding-left: 90px'>

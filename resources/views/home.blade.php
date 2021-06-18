@@ -38,7 +38,7 @@
         <img class="card-img-top" src="{{ $product_group->slika }}" alt="Card image cap">
 
         <div class="card-body">
-          <h5 class="card-title" style='font-size:16px'> {{ $product_group->naziv  }}  </h5>
+          <h5 class="card-title" style='font-size:16px'> {{ $product_group->naziv }}  </h5>
           <p class="card-text"> {{ str_limit($product_group->opis, 80) }} </p>
 
         </div>
