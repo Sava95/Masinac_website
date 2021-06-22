@@ -21,12 +21,12 @@
   
         <section class="timeline">
           <ul>
-            <li id='1970' class='timeline_section active-element'>
+            <li id='1970' class='timeline_section active-element' style='margin-top:40px'>
               <p id='1970_nav' class='navigation'> </p>
 
-              <div class='parent parent_1'>
+              <div class='parent parent_1' style='margin-top: -50px'>
                 <div class='date'> 
-                  1970
+                  {{ __('ui.1970_head') }} 
                 </div>
 
                 <div class='child' style='left: 120px; top: 320px;'>
@@ -40,7 +40,7 @@
 
               <div class='parent parent_2'>
                 <div class='date'> 
-                  1992
+                  {{ __('ui.1992_head') }} 
                 </div>
                 
                 <div class='child' style='left:200px; top: 400px'>
@@ -52,9 +52,16 @@
             <li id='1995' class='timeline_section'>
               <p id='1995_nav' class='navigation'> </p>
 
+              <?php $locale = App::getLocale(); 
+                if ($locale == 'gb')
+                  $left_3 = 'left: 70px';
+                else  
+                  $left_3 = 'left: 140px';
+              ?>
+
               <div class='parent parent_3'>
-                <div class='date'> 
-                  1995
+                <div class='date' style='{{$left_3}}'> 
+                  {{ __('ui.1995_head') }} 
                 </div>
                 
                 <div class='child' style='left: 110px; top: 320px;'>
@@ -68,7 +75,7 @@
 
               <div class='parent parent_4'>
                 <div class='date'> 
-                  2000
+                  {{ __('ui.2000_head') }} 
                 </div>
                 
                 <div class='child' style='left:200px; top: 400px'>
@@ -81,8 +88,16 @@
               <p id='2002_nav' class='navigation'> </p>
 
               <div class='parent parent_5'>
-                <div class='date'> 
-                  2002
+                
+              <?php $locale = App::getLocale(); 
+                if ($locale == 'gb')
+                  $left_5 = 'left: 0px';
+                else  
+                  $left_5 = 'left: 70px';
+              ?>
+
+                <div class='date' style='{{$left_5}}'> 
+                  {{ __('ui.2002_head') }}
                 </div>
                 
                 <div class='child' style='left: 110px; top: 250px;'>
@@ -95,8 +110,8 @@
               <p id='2006_nav' class='navigation'> </p>
 
               <div class='parent parent_6'>
-                <div class='date'> 
-                  2006
+                <div class='date' > 
+                  {{ __('ui.2006_head') }}
                 </div>
                 
                 <div class='child' style='left:200px; top: 340px'>
@@ -111,7 +126,7 @@
 
               <div class='parent parent_7'>
                 <div class='date'> 
-                  2009
+                  {{ __('ui.2009_head') }}
                 </div>
                 
                 <div class='child' style='left: 110px; top: 320px;'>
@@ -126,7 +141,7 @@
 
               <div class='parent parent_8'>
                 <div class='date'> 
-                  2020
+                  {{ __('ui.2020_head') }}
                 </div>
                 
                 <div class='child' style='left:200px; top: 300px'>

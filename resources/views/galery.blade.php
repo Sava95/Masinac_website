@@ -11,49 +11,35 @@
     <div id="slike" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <a href="images\Plain_rim.jpg" style='margin-right:10px' data-lightbox="roadtrip" data-title="My caption" > 
-            <img style="width:250px; height:250px" src="/images/Plain_rim.jpg" > 
+          <a href="images\slika galerija 1.jpg" style='margin-right:10px' data-lightbox="roadtrip" data-title="My caption" > 
+            <img style="width:250px; height:250px" src="/images/galery_primena/slika galerija 1.jpg" > 
           </a>
-          <a href="images\Plain_rim.jpg" style='margin-right:10px'data-lightbox="roadtrip" data-title="My caption"> 
-            <img style="width:250px; height:250px" src="https://via.placeholder.com/150">
+          <a href="/images/galery_primena/slika galerija 2.jpg" style='margin-right:10px'data-lightbox="roadtrip" data-title="My caption"> 
+            <img style="width:250px; height:250px" src="/images/galery_primena/slika galerija 2.jpg">
           </a>
-          <a href="images\Plain_rim.jpg" style='margin-right:10px' data-lightbox="roadtrip" data-title="My caption"> 
-            <img style="width:250px; height:250px" src="/images/Plain_rim.jpg" > 
+          <a href="/images/galery_primena/slika galerija 3.jpg" style='margin-right:10px' data-lightbox="roadtrip" data-title="My caption"> 
+            <img style="width:250px; height:250px" src="/images/galery_primena/slika galerija 3.jpg" > 
           </a>
-          <a href="images\Plain_rim.jpg" data-lightbox="roadtrip" data-title="My caption"> 
-            <img style="width:250px; height:250px" src="/images/Plain_rim.jpg" > 
-          </a>
-      </div>
-
-      <div class="carousel-item">
-          <a href="images\Plain_rim.jpg" style='margin-right:10px' data-lightbox="roadtrip" data-title="My caption" > 
-            <img style="width:250px; height:250px" src="/images/Plain_rim.jpg" > 
-          </a>
-          <a href="images\Plain_rim.jpg" style='margin-right:10px'data-lightbox="roadtrip" data-title="My caption"> 
-            <img style="width:250px; height:250px" src="https://via.placeholder.com/150">
-          </a>
-          <a href="images\Plain_rim.jpg" style='margin-right:10px' data-lightbox="roadtrip" data-title="My caption"> 
-            <img style="width:250px; height:250px" src="https://via.placeholder.com/150">
-          </a>
-          <a href="images\Plain_rim.jpg" data-lightbox="roadtrip" data-title="My caption"> 
-            <img style="width:250px; height:250px" src="/images/Plain_rim.jpg" > 
+          <a href="/images/galery_primena/slika galerija 4.jpg" data-lightbox="roadtrip" data-title="My caption"> 
+            <img style="width:250px; height:250px" src="/images/galery_primena/slika galerija 4.jpg" > 
           </a>
       </div>
 
       <div class="carousel-item">
-          <a href="images\Plain_rim.jpg" style='margin-right:10px' data-lightbox="roadtrip" data-title="My caption" > 
-            <img style="width:250px; height:250px" src="/images/Plain_rim.jpg" > 
+          <a href="/images/galery_primena/slika galerija 5.jpg" style='margin-right:10px' data-lightbox="roadtrip" data-title="My caption" > 
+            <img style="width:250px; height:250px" src="/images/galery_primena/slika galerija 5.jpg" > 
           </a>
-          <a href="images\Plain_rim.jpg" style='margin-right:10px'data-lightbox="roadtrip" data-title="My caption"> 
-            <img style="width:250px; height:250px" src="https://via.placeholder.com/150">
+          <a href="/images/galery_primena/slika galerija 6.jpg" style='margin-right:10px'data-lightbox="roadtrip" data-title="My caption"> 
+            <img style="width:250px; height:250px" src="/images/galery_primena/slika galerija 6.jpg">
           </a>
-          <a href="images\Plain_rim.jpg" style='margin-right:10px' data-lightbox="roadtrip" data-title="My caption"> 
-            <img style="width:250px; height:250px" src="https://via.placeholder.com/150">
+          <a href="/images/galery_primena/slika galerija 7.jpg" style='margin-right:10px' data-lightbox="roadtrip" data-title="My caption"> 
+            <img style="width:250px; height:250px" src="/images/galery_primena/slika galerija 7.jpg">
           </a>
-          <a href="images\Plain_rim.jpg" data-lightbox="roadtrip" data-title="My caption"> 
-            <img style="width:250px; height:250px" src="https://via.placeholder.com/150">
+          <a href="/images/galery_primena/slika galerija 1.jpg" data-lightbox="roadtrip" data-title="My caption"> 
+            <img style="width:250px; height:250px" src="/images/galery_primena/slika galerija 1.jpg" > 
           </a>
       </div>
+      
       <a class="carousel-control-prev"  style='left:-126px' href="#slike" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>

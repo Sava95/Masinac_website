@@ -57,6 +57,16 @@ return [
     'productio_tel' => 'Proizvodnja tel.',
     'retail_tel' => 'Maloprodaja tel.',
     'mass_prod_tel' => 'Veleprodaja tel.',
+
+    '1970_head' => '1970. - Ovako je počelo  ',
+    '1992_head' => '1992. - A ovako se nastavilo... ',
+    '1995_head' => '1995. - Jačalo i širilo se',
+    '2000_head' => '2000. - Početak proizvodnje',
+    '2002_head' => '2002. - Izašlo iz okvira granica zemlje Srbije',
+    '2006_head' => '2006. - Proširenje maloprodaje',
+    '2009_head' => '2009. - Brzo, brže,...',
+    '2020_head' => '2020. - Gledamo u budućnost',
+
 ]
 
 ?>

@@ -59,5 +59,14 @@ return [
     'productio_tel' => 'Production tel.',
     'retail_tel' => 'Retail tel.',
     'mass_prod_tel' => 'Mass prod. tel.',
+
+    '1970_head' => '1970. - This is how it began',
+    '1992_head' => '1992. - And this is how it continued',
+    '1995_head' => '1995. - The company grows and expands',
+    '2000_head' => '2000. - Start of production services',
+    '2002_head' => '2002. - Distribution of products beyond the borders of Serbia',
+    '2006_head' => '2006. - Expansion of retail sales',
+    '2009_head' => '2009. - Fast, faster, ...',
+    '2020_head' => '2020. - Seeing into the future',
 ]
 ?>
