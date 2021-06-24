@@ -67,6 +67,6 @@ return [
     '2009_head' => '2009. - Brzo, brže,...',
     '2020_head' => '2020. - Gledamo u budućnost',
 
-]
+];
 
 ?>
