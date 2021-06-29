@@ -93,7 +93,9 @@
 
             <div class='row' style='margin-left:0px'>
               <p style='padding-right:10px'> Tehničke crteže I sva Vaša pitanja postavljajte na e-mail: </p>
-              <a href='#'> masinacusluge@gmail.com </a> 
+              <a href='mailto:masinacusluge@gmail.com'> masinacusluge@gmail.com </a> 
+              <p style='margin: 0px 10px'> ili nas kontaktirajte direktno putem linka: </p> 
+              <a href="{{ route('contact') }}"> {{ __('ui.contact') }} </a>
             </div> 
 
           </div> 

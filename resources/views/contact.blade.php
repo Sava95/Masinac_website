@@ -77,7 +77,7 @@
 
   <!-- Lower -->
   <div class='containter' style='padding-top:30px'>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2855.6858059003075!2d20.575476086069308!3d44.295850007075146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47574ce3b683dcdd%3A0xecf5163997f972f9!2s%C4%8Cegarska%2023%2C%20Aran%C4%91elovac%2034300!5e0!3m2!1sen!2srs!4v1623685395783!5m2!1sen!2srs"  width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2401.099500248697!2d20.566110308448852!3d44.30163196961978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47574d18ce7734c3%3A0xd11fbb060f4b5fb2!2zTWHFoWluYWM!5e0!3m2!1sen!2srs!4v1624899618339!5m2!1sen!2srs" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   </div>
   
 @endsection

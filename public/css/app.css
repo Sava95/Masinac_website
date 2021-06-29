@@ -125,6 +125,7 @@ a.about-us-link:hover {
   position: relative;
   background-color: #fff;
   border-radius: 5px;
+  border: 3px solid red;
   cursor: pointer;
   box-shadow: 0 0 0 1px #d0d8df, 0 1px 3px rgba(0, 0, 0, 0.15);
   transition: all 0.3s;
@@ -143,9 +144,17 @@ a.about-us-link:hover {
   text-decoration: underline;
   -webkit-text-decoration-color: red;
           text-decoration-color: red;
+  text-underline-offset: 10px;
   font-size: 30px;
   font-weight: 600;
+}
+
+.footer_headliners {
+  text-decoration: underline;
+  -webkit-text-decoration-color: red;
+          text-decoration-color: red;
   text-underline-offset: 10px;
+  padding-bottom: 10px;
 }
 
 #arrow_up_circle {
@@ -212,7 +221,7 @@ footer h6 {
   height: 30px;
   border-radius: 50%;
   background-color: inherit;
-  content: url(/images/Masinac---Favicon_30x30.png?1d10a16732abf4cf4304e7e86896f0dc);
+  content: url(/images/Masinac---Favicon_30x30.png?b3e5628cca3ea506372bf5001f840e0d);
   z-index: 1;
   bottom: 44px;
 }
@@ -232,57 +241,58 @@ footer h6 {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  width: 400px;
+  width: 100%;
   padding: 15px;
-  left: 20px;
+  left: 0px;
   top: 180px;
   border-style: solid;
-  border-radius: 25px;
   border-width: 1px;
   background-color: white;
   z-index: 0;
+  background-color: #171717;
+  color: #83818c;
 }
 
 .timeline ul li:nth-child(even) div.child {
   position: absolute;
   text-align: justify;
   bottom: 0;
-  width: 400px;
+  width: 100%;
   padding: 15px;
   right: 20px;
+  left: 0px;
   top: 180px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   border-style: solid;
-  border-radius: 25px;
   border-width: 1px;
   background-color: white;
   z-index: 2;
+  background-color: #171717;
+  color: #83818c;
 }
 
 .timeline ul li:nth-child(odd) div.date {
   position: absolute;
-  left: 160px;
   top: -30px;
+  left: 0px;
   font-size: 18px;
   font-weight: bold;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 100%;
   margin-top: -10px;
+  text-align: center;
 }
 
 .timeline ul li:nth-child(even) div.date {
   position: absolute;
-  right: 120px;
+  left: 0px;
   top: -30px;
   font-size: 18px;
   font-weight: bold;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 100%;
   margin-top: -10px;
+  text-align: center;
 }
 
 .navigation {

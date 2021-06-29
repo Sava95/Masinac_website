@@ -21,7 +21,7 @@ return [
 
     '1992' => "Growing up with a blacksmith father and acquiring knowledge during his studies lead to his life's determination. On January 15, 1991, Željko Simikić and his wife Natalija founded the ironworks SZTR Mašinac. Within the shop, one part was organized for the provision of metal processing services on the universal lathe while the rest was designed for the production of finished products.",
 
-    '1995' => 'Higher demand for products and goods, created the need for another sales facility. A separate part of the Mašinac company is starting to work near the family home at 23 Čegarska Street. The production hall is equipped with several industrial machines, and a wholesale warehouse is organized within the hall.',
+    '1995' => 'Higher demand for products and goods, created the need for another sales facility. A separate part of the Mašinac company is starting to work near the family home. The production hall is equipped with several industrial machines, and a wholesale warehouse is organized within the hall.',
 
     '2000' => "In the production hall, a process of small serial production of several groups of finished products is organized, which have become a trademark of the company. The first and initial products are reamer screws, g-screws, flaky hooks, latches and second brackets",
 

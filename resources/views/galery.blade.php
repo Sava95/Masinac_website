@@ -50,7 +50,7 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    
+    <!-- 
     <h4 class='nasi_proizvodi' style='margin-top:30px'> {{ __('ui.montaza') }} </h4> 
     <p style='margin-top: 15px; font-size: 20px'> {{ __('ui.montaza_moto') }} </p>
 
@@ -109,7 +109,7 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div>
+    </div> -->
 
 
 
