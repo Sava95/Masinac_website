@@ -37,10 +37,19 @@
       <div id='{{ $product_group->grupe_prod_id }} ' class="card tab-card" style="width: 16rem; margin: 10px " >
         <img class="card-img-top" src="{{ $product_group->slika }}" alt="Card image cap">
 
-        <div class="card-body">
-          <h5 class="card-title" style='font-size:16px'> {{ $product_group->naziv }}  </h5>
-          <p class="card-text"> {{ str_limit($product_group->opis, 80) }} </p>
+        <?php $locale = App::getLocale(); 
+          if ($locale == 'rs') {
+              $naziv = $product_group->naziv;
+              $opis =  str_limit($product_group->opis, 80);
+          } else {
+            $naziv = $product_group->naziv_eng;
+            $opis =  str_limit($product_group->opis_eng, 80);
+          }
+        ?> 
 
+        <div class="card-body">
+          <h5 class="card-title" style='font-size:16px'> {{ $naziv }}  </h5>
+          <p class="card-text"> {{ $opis }} </p>
         </div>
       </div>
     @endforeach

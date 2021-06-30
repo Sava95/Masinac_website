@@ -45,39 +45,61 @@
 
         <a id='products' href="{{ route('products') }}" class="nav-item nav_item_down"
           style='margin-right:5px; text-transform: uppercase' active-color="#ff3333">{{ __('ui.products') }}</a>
-          
+        
+        <?php $locale = App::getLocale(); 
+          if ($locale == 'rs') {
+              $reze_zatvaraci = 'Reze i zatvarači';
+              $sarke = 'Šarke';
+              $ugaoni_vezaci = 'Ugaoni vezači';
+              $ravni_vezaci = 'Ravni vezači';
+              $prod_zice = 'Proizvodi od žice';
+              $nosaci = 'Nosači'; 
+              $pl_masa = 'Proizvodi od plastičnih masa';
+              $usluge = 'Usluge';
+          } else {
+              $reze_zatvaraci = 'Latches and closure';
+              $sarke = 'Hignes';
+              $ugaoni_vezaci = 'Angle binders';
+              $ravni_vezaci = 'Straight binders';
+              $prod_zice = 'Wire products';
+              $nosaci = 'Carriers'; 
+              $pl_masa = 'Plastic products';
+              $usluge = 'Services';
+          }
+        ?> 
+
         <div class="dropdown" style='display:flex; align-content: center; justify-content: center;'>
           <div id='products_dropdown' class="dropdown-menu dropdown-menu-right" style='margin: 0px -90px 0px 0px;'>
               <li class='dropdown-item hover_highlight'>
-                <a href='/products/reze_zatvaraci' class='linkToparagraph'> Reze i zatvaraci </a>
+                <a href='/products/reze_zatvaraci' class='linkToparagraph'> {{$reze_zatvaraci}} </a>
               </li>
 
               <li class='dropdown-item hover_highlight'>
-                <a href='/products/sarke' class='linkToparagraph'> Šarke </a>
+                <a href='/products/sarke' class='linkToparagraph'> {{$sarke}} </a>
               </li>
 
               <li class='dropdown-item hover_highlight'>
-                <a href='/products/ugaoni_vezaci' class='linkToparagraph'> Ugaoni vezači </a>
+                <a href='/products/ugaoni_vezaci' class='linkToparagraph'> {{$ugaoni_vezaci}} </a>
               </li>
 
               <li class='dropdown-item hover_highlight'>
-                <a href='/products/ravni_vezaci' class='linkToparagraph'> Ravni vezači </a>
+                <a href='/products/ravni_vezaci' class='linkToparagraph'> {{$ravni_vezaci}} </a>
               </li>
 
               <li class='dropdown-item hover_highlight'>
-                <a href='/products/prod_zice' class='linkToparagraph'> Proizvodi od žice </a>
+                <a href='/products/prod_zice' class='linkToparagraph'> {{$prod_zice}} </a>
               </li>
 
               <li class='dropdown-item hover_highlight'>
-                <a href='/products/nosaci' class='linkToparagraph'> Nosači </a>
+                <a href='/products/nosaci' class='linkToparagraph'> {{$nosaci}} </a>
               </li>
 
               <li class='dropdown-item hover_highlight'>
-                <a href='/products/pl_masa' class='linkToparagraph'> Prod. od plastičnih masa </a>
+                <a href='/products/pl_masa' class='linkToparagraph'> {{$pl_masa}} </a>
               </li>
 
               <li class='dropdown-item hover_highlight'>
-                <a href='/products/usluge' class='linkToparagraph'> Usluge </a>
+                <a href='/products/usluge' class='linkToparagraph'> {{$usluge}} </a>
               </li>
 
           </div>

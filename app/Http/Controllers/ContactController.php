@@ -33,9 +33,10 @@ class ContactController extends Controller
                 'phone' => $request->phone,
                 'msg' => $request->message,
             ], 
+
             function($mail) use($request) {
-                $mail->from(env('MAIL_FROM_ADDRESS', $request->name));
-                $mail->to('sava.nedeljkovic026@gmail.com')->subject('Contact Us Mail');
+                $mail->from(env('MAIL_FROM_ADDRESS', $request->email));
+                $mail->to('office@masinacserbia.rs')->subject('Contact Us Mail');
             });
 
             $message_sent = True;

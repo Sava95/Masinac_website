@@ -71,9 +71,10 @@ class MainController extends Controller
         $image = substr($image, 2);
 
         $description = GrupeProizvoda::where('id', $product->id_grupe_proizvoda)->pluck('opis')->first();
+        $description_eng = GrupeProizvoda::where('id', $product->id_grupe_proizvoda)->pluck('opis_eng')->first();
 
         $details = DetaljiProizvoda::where('prod_id', $product->id)->get();
 
-        return view('product_details', compact('product', 'description', 'image', 'details'));
+        return view('product_details', compact('product', 'description', 'description_eng', 'image', 'details'));
     }
 }

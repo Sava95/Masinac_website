@@ -64,13 +64,15 @@
       </div>
 
       <div class="col-md-3 col-lg-3 col-xl-3 mt-3" style='margin-left:20px'>
-        <h4 class="text-uppercase mb-4"> <strong> Masinac RS </strong> </h4>
-        <p style='margin-bottom: 0.5rem;'> Aranđelovac, AR 34300, RS </p>
-        <p style='margin-bottom: 0.5rem;'> Email: office@masinacserbia.rs </p>
-        <p style='margin-bottom: 0.5rem;'> {{ __('ui.productio_tel') }} +381 34 6790-545 </p>
-        <p style='margin-bottom: 0.5rem;'> {{ __('ui.retail_tel') }} +381 34 6790-545 </p>
-        <p style='margin-bottom: 0.5rem;'> {{ __('ui.mass_prod_tel') }} +381 34 6790-545 </p>
+        <div class="card p-3" style='width:max-content;'>
+          <h4 class="text-uppercase mb-4"> <strong> Masinac RS </strong> </h4>
+          <p style='margin-bottom: 0.5rem;'> Aranđelovac, AR 34300, RS </p>
+          <p style='margin-bottom: 0.5rem;'> Email: office@masinacserbia.rs </p>
+          <p style='margin-bottom: 0.5rem;'> {{ __('ui.productio_tel') }} +381 34 6790-545 </p>
+          <p style='margin-bottom: 0.5rem;'> {{ __('ui.retail_tel') }} +381 34 6790-545 </p>
+          <p style='margin-bottom: 0.5rem;'> {{ __('ui.mass_prod_tel') }} +381 34 6790-545 </p>
 
+        </div>
       </div>
     </div>
   </div> 
