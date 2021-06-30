@@ -69,7 +69,7 @@
         ?> 
 
         <div class="dropdown" style='display:flex; align-content: center; justify-content: center;'>
-          <div id='products_dropdown' class="dropdown-menu dropdown-menu-right" style='margin: 0px -90px 0px 0px;'>
+          <div id='products_dropdown' class="dropdown-menu dropdown-menu-right" style='margin: 0px -62px 0px 0px;'>
               <li class='dropdown-item hover_highlight'>
                 <a href='/products/reze_zatvaraci' class='linkToparagraph'> {{$reze_zatvaraci}} </a>
               </li>
