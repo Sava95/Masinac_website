@@ -137,7 +137,13 @@ div.galery_links {
     text-decoration:none;
     font-size: 16px;
     opacity: 0.4;
+    
     transition: all .3s ease-in;
+    -webkit-animation: aia2 5s linear infinite alternate;
+    -moz-animation: aia2 5s linear infinite alternate;
+    -ms-animation: aia2 5s linear infinite alternate;
+    -o-animation: aia2 5s linear infinite alternate;
+    animation: aia2 5s linear infinite alternate; /* this comes last */
 }
 
 a.about-us-link:hover{
@@ -207,6 +213,12 @@ a.about-us-link:hover{
     -ms-transition:     all .5s ease;
     transition:         all .5s ease;
 
+    -webkit-animation: aia2 5s linear infinite alternate;
+    -moz-animation: aia2 5s linear infinite alternate;
+    -ms-animation: aia2 5s linear infinite alternate;
+    -o-animation: aia2 5s linear infinite alternate;
+    animation: aia2 5s linear infinite alternate; /* this comes last */
+    
     &:hover {
         transform: translateY(-10px);
         cursor: pointer;

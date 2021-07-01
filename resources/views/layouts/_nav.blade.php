@@ -119,8 +119,6 @@
             <a  class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style='color:white; margin-top:50px;'> 
                             
               <?php $locale = App::getLocale(); 
-                if ($locale == 'gb')
-                    $locale = 'en';
               ?> 
 
               <text style='text-transform: uppercase;'> {{$locale}} </text>
@@ -129,7 +127,7 @@
             
             <div id='lang_dropdown' class="dropdown-menu dropdown-menu-right" style="min-width:110px; margin: 71px -60px 0 0">
                 <li class='dropdown-item'>
-                  @include('layouts._locale', ['lang' => 'gb', 'nation' => 'English'])
+                  @include('layouts._locale', ['lang' => 'en', 'nation' => 'English'])
                 </li>
 
                 <li class='dropdown-item'>

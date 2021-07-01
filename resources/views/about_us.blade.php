@@ -80,7 +80,15 @@
               <p id='2002_nav' class='navigation'> </p>
 
               <div class='parent parent_5'>
-                <div class='date' style='left:0px'> 
+                <?php $locale = App::getLocale(); 
+                  if ($locale == 'en') {
+                    $top = '-30px';
+                  } else {
+                    $top = '0px';
+                  }
+                ?> 
+
+                <div class='date' style='left:0px; margin-top:{{$top}}'> 
                   {{ __('ui.2002_head') }}
                 </div>
                 

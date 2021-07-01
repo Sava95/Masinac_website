@@ -7,7 +7,7 @@
 @endisset
 
 <div id='arrow_div'> 
-  <img id='arrow_up_circle' width='50px' height='50px'src='/images/arrow-up-circle.png' alt='Arrow up' style='position:fixed; margin: 450px 1380px;'>
+  <img id='arrow_up_circle' width='50px' height='50px' src='/images/arrow-up-circle.png' alt='Arrow up' style='position:fixed; margin: 450px 1380px;'>
 </div>
 
 <div id='video_div' class="container-fluid">
@@ -19,8 +19,8 @@
 </div>
 
 <!-- Grupe proizvoda -->
-<div class='slogan d-flex justify-content-center align-items-center'>
-  <p style='margin:0px; font-size: 40px; color:white; font-weight: 700'>
+<div class='slogan d-flex align-items-center'>
+  <p style='margin:0px; margin-left: 200px; font-size: 40px; color:white; font-weight: 700'>
     <img src='../images/Masinac---Logo---White.png' alt='Logo'>  
     <i> {{ __('ui.world_of_possibilities') }} </i> 
   </p>

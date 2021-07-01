@@ -127,7 +127,7 @@ $(function(){
 });
 
 $('#arrow_div').on('click', function(){
-  window.scrollTo(0, 0);
+  window.scrollTo(0, 0, 'smooth');
 })
 
 //  =============================================== CONTATCT US ==========================================================

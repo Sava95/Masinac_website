@@ -60,12 +60,12 @@
         <div class="text-center text-md-right">
           <ul class="list-unstyled list-inline">
             <li class="list-inline-item">
-              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1" >
                 <i class="fa fa-2x fa-facebook-square"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1" href='https://www.instagram.com/masinac_serbia/'>
                 <i class="fa fa-2x fa-instagram"></i>
               </a>
             </li>
